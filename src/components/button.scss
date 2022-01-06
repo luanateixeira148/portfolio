@@ -1,0 +1,17 @@
+@import "../sassStyles/variables";
+
+.button-3d {
+  height: 40px;
+  width: 150px;
+  background-color: $purple;
+
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 800; //extra-bold
+  font-style: normal;
+  font-size: 14px;
+  color: $off-white;
+  letter-spacing: 0.12em;
+
+  border: none;
+  box-shadow: -5px 5px 0px 0px $teal;
+}

@@ -2,11 +2,3 @@
 @import "./sassStyles/variables";
 @import "./sassStyles/typography";
 
-.test-title {
-  @include flexCenter(column);
-
-  height: 100vh;
-  width: 100vw;
-  background-color: $off-black;
-  color: $coral;
-}
