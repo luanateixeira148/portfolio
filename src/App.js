@@ -1,13 +1,11 @@
 import './App.scss';
-import Button from './components/Button';
+import ProjectsComp from './components/Projects';
 
 function App() {
   return (
     <div className="App">
       
-      <Button 
-        text={"SEE MORE"}
-      />
+      <ProjectsComp />
       
     </div>
   );

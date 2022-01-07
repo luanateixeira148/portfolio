@@ -1,0 +1,33 @@
+@import "../sassStyles/variables";
+@import "../sassStyles/mixins";
+
+.projects-comp-container {
+
+  width: 100% - padding;
+  padding: 0 5%;
+  background-color: $dark-purple;
+
+  header, footer {
+    color: $teal;
+    padding: 10% 5%;
+  }
+
+  main {
+
+    .projects-comp-grid {
+      @include flexCenter(row);
+      flex-wrap: wrap;
+  
+      .projects-comp-img {
+        max-width: 45%;
+        margin: 0;
+      }
+    }
+
+    .projects-comp-button {
+      @include flexCenter(row);
+      padding: 10% 0 5% 0;
+    }
+
+  }
+}
