@@ -1,0 +1,36 @@
+@import "../sassStyles/variables";
+@import "../sassStyles/mixins";
+
+.home {
+  background-color: $dark-purple;
+  height: 100vh;
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 5%;
+    height: 10%;
+
+    .logo {
+      width: 10%;
+    }
+  }
+
+  main {
+
+    height: 90%;
+    margin: 0 5%;
+
+    .intro {
+      margin: 30% 0;
+    }
+
+    .illustration {
+      width: 300px;
+      height: 400px;
+      background-color: indianred;
+    }
+
+  }
+}
