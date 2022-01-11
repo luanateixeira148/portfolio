@@ -3,7 +3,7 @@
 @import "./sassStyles/typography";
 
 html {
-  width: 100vw;
+  box-sizing: border-box;
 }
 
 body {
@@ -12,7 +12,6 @@ body {
 }
 
 .App {
-  width: 100% - padding;
-  padding: 5%;
+  width: 100vw;
   background-color: $dark-purple;
 }
