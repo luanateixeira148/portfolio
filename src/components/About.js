@@ -13,7 +13,7 @@ function About () {
           Profile photo
         </div>
         <div className="bio">
-          <p>
+          <p className="off-white">
             With a passion for learning, I’m fascinated with Human-Computer Interactions and user-centred design.
             I have a strong background in UI/UX Design, though my expertise lies in simple yet effective web and software development.
           </p>

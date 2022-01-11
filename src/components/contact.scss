@@ -1,0 +1,30 @@
+@import "../sassStyles/variables";
+@import "../sassStyles/mixins";
+
+.contact {
+
+  main {
+
+    @include flexCenter(column);
+
+    .email {
+      margin: 10px;
+    }
+    
+    .social-icons {
+
+      @include flexCenter(row);
+
+      .social-icon {
+
+        height: 30px;
+        width: auto;
+        margin: 10px;
+        color: $off-white;
+
+      }
+
+    }
+  }
+
+}
