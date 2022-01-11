@@ -1,0 +1,6 @@
+@import "../sassStyles/mixins";
+
+.footer {
+  @include flexCenter(row);
+  height: 50px;
+}
