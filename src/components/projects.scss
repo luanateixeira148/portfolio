@@ -7,7 +7,6 @@
 
   header, footer {
     color: $teal;
-    padding: 10% 0;
   }
 
   main {
@@ -24,7 +23,6 @@
 
     .projects-comp-button {
       @include flexCenter(row);
-      padding: 10% 0 5% 0;
     }
 
   }
