@@ -3,8 +3,23 @@
 
 
 .skill-card {
+
   @include flexCenter(column);
   background-color: $light-coral;
   padding: 10%;
   padding-bottom: 50px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      font-family: 'Exo 2', sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+
 }

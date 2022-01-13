@@ -1,3 +1,5 @@
+@import "../../sassStyles/variables";
+
 .swiper-pagination ::v-deep
   .swiper-pagination-bullet {
     opacity: 1;
@@ -6,5 +8,5 @@
   }
     
   .swiper-pagination-bullet-active {
-    background-color: pink !important;
+    background-color: $coral !important;
   }

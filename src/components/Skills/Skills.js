@@ -10,7 +10,11 @@ function Skills () {
       </header>
 
       <main>
-        <SkillsSwiper />
+        <div className="swiper-container"> 
+          
+          <SkillsSwiper />
+
+        </div>
       </main>
 
       <footer>

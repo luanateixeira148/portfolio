@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Card from './Card';
 import "swiper/css";
 import "swiper/css/pagination";
-import "./skills-swiper.scss";
+import "./skillsswiper.scss";
 import SwiperCore, { Pagination } from 'swiper';
 import { skillsArray } from '../../data-files/skills-array';
 
@@ -19,17 +19,13 @@ function SkillsSwiper () {
         "clickable": true
       }}
     >
-
       {skillsArray.map((skill) => (
         <SwiperSlide>
-
           <Card 
             skill={skill}
           />
-
         </SwiperSlide>
       ))}
-    
     </Swiper>  
   );
 

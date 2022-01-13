@@ -6,11 +6,11 @@ function Card (props) {
 
   return (
     <div className="skill-card">
-      <h2>{skill.title}</h2>
-      <p>{skill.description}</p>
+      <h2 className="coral">{skill.title}</h2>
+      <p className="off-black">{skill.description}</p>
       <ul>
         {skill.skills.map((item) => (
-          <li>{item}</li>
+          <li className="off-black">{item}</li>
         ))}
       </ul>
     </div>
