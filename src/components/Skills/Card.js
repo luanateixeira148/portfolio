@@ -1,22 +1,17 @@
+import "./card.scss";
 
+function Card (props) {
 
-function Card () {
+  const skill = props.skill;
 
   return (
-    <div className="skillcard">
-      <h2>Frontend Development</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae facilisis eros.</p>
+    <div className="skill-card">
+      <h2>{skill.title}</h2>
+      <p>{skill.description}</p>
       <ul>
-        <li>Lorem ipsum</li>
-        <li>Lorem ipsum</li>
-        <li>Lorem ipsum</li>
-        <li>Lorem ipsum</li>
-        <li>Lorem ipsum</li>
-        <li>Lorem ipsum</li>
-        <li>Lorem ipsum</li>
-        <li>Lorem ipsum</li>
-        <li>Lorem ipsum</li>
-        <li>Lorem ipsum</li>
+        {skill.skills.map((item) => (
+          <li>{item}</li>
+        ))}
       </ul>
     </div>
   );

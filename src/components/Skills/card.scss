@@ -1,0 +1,10 @@
+@import '../../sassStyles/variables';
+@import '../../sassStyles/mixins';
+
+
+.skill-card {
+  @include flexCenter(column);
+  background-color: $light-coral;
+  padding: 10%;
+  padding-bottom: 50px;
+}
