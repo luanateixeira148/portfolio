@@ -1,0 +1,13 @@
+@import '../../sassStyles/mixins';
+
+.skills {
+
+  main {
+    @include flexCenter(row);
+
+    .swiper-container {
+      width: 90%;
+    }
+  }
+
+}

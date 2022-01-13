@@ -48,10 +48,15 @@ p {
   font-style: normal;
   font-size: 16px;
   margin: 0;
+  line-height: 1.5;
 }
 
 .off-white {
   color: $off-white;
+}
+
+.off-black {
+  color: $off-black;
 }
 
 .yellow {
@@ -60,4 +65,8 @@ p {
 
 .teal {
   color: $teal;
+}
+
+.coral {
+  color: $coral;
 }
