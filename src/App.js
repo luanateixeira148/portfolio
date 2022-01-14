@@ -1,20 +1,15 @@
 import './App.scss';
-import ProjectsComp from './components/Projects';
-import Home from './components/Home';
-import About from './components/About';
-import Skills from './components/Skills/Skills';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Main from './pages/main';
+import { Routes, Route, Link } from "react-router-dom";
+import Projects from './pages/projects';
 
 function App() {
   return (
     <div className="App">
-      <Home />
-      <ProjectsComp />
-      <About />
-      <Skills />
-      <Contact />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="projects" element={<Projects />} />
+      </Routes>
     </div>
   );
 }

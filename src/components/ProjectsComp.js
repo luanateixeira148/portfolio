@@ -1,6 +1,7 @@
-import "./projects.scss";
+import { Routes, Route, Link } from "react-router-dom";
 import Button from "./Button";
 import lotify from "../assets/Lotify.png"
+import "./projects.scss";
 
 function ProjectsComp () {
 
@@ -17,7 +18,9 @@ function ProjectsComp () {
           <img src={lotify} alt="Lotify" className="projects-comp-img"/>
         </div>
         <div className="projects-comp-button">
-          <Button text={"SEE MORE"} />
+          <Link to="/projects">
+            <Button text={"SEE MORE"} />
+          </Link>
         </div>
       </main>
       <footer>
