@@ -1,0 +1,35 @@
+@import "../sassStyles/mixins";
+
+.project-card {
+
+  @include flexCenter(column);
+  width: 100%;
+  margin-top: 20%;
+
+  .project-card-img {
+    width: 70%;
+  }
+
+  .title {
+
+    width: 70%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 5%;
+
+    .icon {
+      font-size: 22px;
+      margin-left: 20px;
+    }
+
+  }
+
+  p {
+
+    width: 70%;
+
+  }
+
+}

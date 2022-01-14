@@ -1,14 +1,12 @@
 import "./home.scss";
+import Header from "./Header";
 import logo from "../assets/logo.svg";
-import femaleDeveloper from "../assets/femaleDev.jpg"
 
 function Home () {
 
   return (
     <div className="home">
-      <header>
-        <img src={logo} className="logo"/>
-      </header>
+      <Header />
       <main>
         <div className="intro">
           <h4 className="yellow">HELLO, WORLD!</h4>
