@@ -1,5 +1,4 @@
 import "./home.scss";
-import Header from "./Header";
 import logo from "../assets/logo.svg";
 
 function Home () {

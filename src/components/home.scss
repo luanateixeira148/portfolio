@@ -10,13 +10,12 @@
   
     main {
       height: 100vh;
-      width: 100vw;
       padding: 10%;
       @include flexCenter(column);
   
       .intro {
         width: 100%;
-        margin: 0 0 20% 0;
+        margin: 10% 0 20% 0;
       }
   
       .illustration {
@@ -29,7 +28,68 @@
         .logo {
           width: 60%;
         }
+      }
+    }
+  }
+}
 
+@media (min-width: $tablet-width) and (max-width: ($desktop-width - 1)) {
+ 
+  .home {
+    background-color: $dark-purple;
+    height: 100vh;
+  
+    main {
+      height: 100vh;
+      padding: 10%;
+      @include flexCenter(column);
+  
+      .intro {
+        width: 100%;
+        margin: 10% 0 20% 0;
+      }
+  
+      .illustration {
+
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        margin: 10% 0;
+       
+        .logo {
+          width: 40%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+ 
+  .home {
+    background-color: $dark-purple;
+    height: 100vh;
+    @include flexCenter(column);
+  
+    main {
+      height: 100vh;
+      width: 800px;
+      @include flexCenter(column);
+  
+      .intro {
+        width: 100%;
+        margin-bottom: 20%;
+      }
+  
+      .illustration {
+
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+       
+        .logo {
+          width: 40%;
+        }
       }
     }
   }
