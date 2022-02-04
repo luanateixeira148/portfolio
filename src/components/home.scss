@@ -31,9 +31,16 @@
           padding: 5px;
           font-size: 30px;
 
-          // span {
-          //   text-decoration: underline $teal;
-          // }
+          mark {
+            display: inline-block;
+            line-height: 0em;
+            padding-bottom: 0.6em;
+            background-color: $coral;
+            color: $off-white;
+            font-family: 'Exo 2', sans-serif;
+            font-weight: 400;
+            font-style: normal;
+          }
         }
       } 
     }
@@ -69,9 +76,16 @@
           padding: 5px;
           font-size: 20px;
 
-          // span {
-          //   text-decoration: underline $teal;
-          // }
+          mark {
+            display: inline-block;
+            line-height: 0em;
+            padding-bottom: 0.6em;
+            background-color: $coral;
+            color: $off-white;
+            font-family: 'Exo 2', sans-serif;
+            font-weight: 400;
+            font-style: normal;
+          }
         }
       } 
     }
