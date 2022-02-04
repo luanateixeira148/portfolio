@@ -1,27 +1,69 @@
 @import "../sassStyles/variables";
 @import "../sassStyles/mixins";
 
-.projects-comp-container {
 
-  header, footer {
-    color: $teal;
-  }
 
-  main {
+@media (min-width: $tablet-width) {
 
-    .projects-comp-grid {
-      @include flexCenter(row);
-      flex-wrap: wrap;
+  .projects-comp-container {
   
-      .projects-comp-img {
-        max-width: 45%;
-        margin: 0;
+    header, footer {
+      color: $teal;
+      padding: 5% 0;
+    }
+  
+    main {
+
+      @include flexCenter(column);
+  
+      .projects-comp-grid {
+        @include flexCenter(row);
+        flex-wrap: wrap;
+        max-width: 900px;
+    
+        .projects-comp-img {
+          width: 45%;
+          margin: 0;
+        }
       }
+  
+      .projects-comp-button {
+        @include flexCenter(row);
+        margin: 5%;
+      }
+  
     }
-
-    .projects-comp-button {
-      @include flexCenter(row);
-    }
-
   }
+
+}
+
+@media (max-width: $mobile-width) {
+
+  .projects-comp-container {
+  
+    header, footer {
+      color: $teal;
+      padding: 10% 0;
+    }
+  
+    main {
+  
+      .projects-comp-grid {
+        @include flexCenter(row);
+        flex-wrap: wrap;
+    
+        .projects-comp-img {
+          max-width: 45%;
+          margin: 0;
+        }
+      }
+  
+      .projects-comp-button {
+        @include flexCenter(row);
+        margin: 5%;
+      }
+  
+    }
+  }
+
 }
