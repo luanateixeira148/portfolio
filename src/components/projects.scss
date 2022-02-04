@@ -20,10 +20,15 @@
         @include flexCenter(row);
         flex-wrap: wrap;
         max-width: 900px;
+
+        &:hover .projects-comp-img:not(:hover) {
+          filter: grayscale(70%);
+        }
     
         .projects-comp-img {
           width: 45%;
           margin: 0;
+          cursor: pointer;
         }
       }
   
