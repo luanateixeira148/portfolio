@@ -1,11 +1,27 @@
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 0 5%;
-  height: 10%;
+@import "../sassStyles/variables";
 
-  .logo {
-    width: 10%;
+@media (min-width: $tablet-width) { 
+
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5%;
+
+    .logo {
+      width: 100px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) { 
+
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10%;
+
+    .logo {
+      width: 60px;
+    }
   }
 }

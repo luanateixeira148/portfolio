@@ -1,96 +1,79 @@
 @import "../sassStyles/variables";
 @import "../sassStyles/mixins";
+ 
+
+@media (min-width: $tablet-width) {
+  .home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      height: 80%;
+
+      .intro {
+        padding: 10% 10% 0 10%;
+
+        .upper-title {
+          padding: 5px;
+          font-size: 30px;
+        }
+
+        .title-name {
+          padding: 5px;
+          font-size: 100px;
+        }
+
+        .subtitle {
+          padding: 5px;
+          font-size: 30px;
+
+          // span {
+          //   text-decoration: underline $teal;
+          // }
+        }
+      } 
+    }
+  }
+}
 
 @media (max-width: $mobile-width) {
- 
   .home {
-    background-color: $dark-purple;
     height: 100vh;
-    min-width: 300px;
-  
+    display: flex;
+    flex-direction: column;
+
     main {
-      height: 100vh;
-      padding: 10%;
-      @include flexCenter(column);
-  
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      height: 80%;
+
       .intro {
-        width: 100%;
-        margin: 10% 0 20% 0;
-      }
-  
-      .illustration {
+        padding: 40% 10% 0 10%;
 
-        display: flex;
-        justify-content: flex-end;
-        width: 100%;
-        margin: 10% 0;
-       
-        .logo {
-          width: 60%;
+        .upper-title {
+          padding: 5px;
+          font-size: 20px;
         }
-      }
-    }
-  }
-}
 
-@media (min-width: $tablet-width) and (max-width: ($desktop-width - 1)) {
- 
-  .home {
-    background-color: $dark-purple;
-    height: 100vh;
-  
-    main {
-      height: 100vh;
-      padding: 10%;
-      @include flexCenter(column);
-  
-      .intro {
-        width: 100%;
-        margin: 10% 0 20% 0;
-      }
-  
-      .illustration {
-
-        display: flex;
-        justify-content: flex-end;
-        width: 100%;
-        margin: 10% 0;
-       
-        .logo {
-          width: 40%;
+        .title-name {
+          padding: 5px;
+          font-size: 50px;
         }
-      }
-    }
-  }
-}
 
-@media (min-width: $desktop-width) {
- 
-  .home {
-    background-color: $dark-purple;
-    height: 100vh;
-    @include flexCenter(column);
-  
-    main {
-      height: 100vh;
-      width: 800px;
-      @include flexCenter(column);
-  
-      .intro {
-        width: 100%;
-        margin-bottom: 20%;
-      }
-  
-      .illustration {
+        .subtitle {
+          padding: 5px;
+          font-size: 20px;
 
-        display: flex;
-        justify-content: flex-end;
-        width: 100%;
-       
-        .logo {
-          width: 40%;
+          // span {
+          //   text-decoration: underline $teal;
+          // }
         }
-      }
+      } 
     }
   }
 }
