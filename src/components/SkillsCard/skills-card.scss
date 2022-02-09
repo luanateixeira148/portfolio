@@ -1,0 +1,28 @@
+@import '../../sassStyles/variables';
+@import '../../sassStyles/mixins';
+
+
+.skill-card {
+  @include flexCenter(column);
+  background-color: $light-coral;
+  padding: 10%;
+  padding-bottom: 15%;
+  height: 400px;
+
+  h2 {
+    margin-bottom: 5px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      font-family: 'Exo 2', sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+}

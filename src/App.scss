@@ -2,17 +2,14 @@
 @import "./sassStyles/variables";
 @import "./sassStyles/typography";
 
-html {
-  width: 100vw;
+* {
+ box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  padding: 0;
 }
 
 .App {
-  width: 100% - padding;
-  padding: 5%;
   background-color: $dark-purple;
 }

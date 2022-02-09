@@ -1,16 +1,15 @@
 import './App.scss';
-import ProjectsComp from './components/Projects';
-import Home from './components/Home';
-import About from './components/About';
-import Contact from './components/Contact';
+import Main from './pages/main';
+import { Routes, Route, Link } from "react-router-dom";
+import Projects from './pages/projects';
 
 function App() {
   return (
     <div className="App">
-      <Home />
-      <ProjectsComp />
-      <About />
-      <Contact />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="projects" element={<Projects />} />
+      </Routes>
     </div>
   );
 }
