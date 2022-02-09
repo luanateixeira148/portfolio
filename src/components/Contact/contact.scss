@@ -1,0 +1,49 @@
+@import "../../sassStyles/variables";
+@import "../../sassStyles/mixins";
+
+.contact {
+
+  header {
+    padding: 0 0 5% 0;
+  }
+
+  footer {
+    padding: 5% 0;
+  }
+
+  main {
+
+    @include flexCenter(column);
+
+    .email {
+      margin: 10px;
+
+      a {
+        text-decoration: none;
+      }
+    }
+    
+    .social-icons {
+
+      @include flexCenter(row);
+
+      .social-icon {
+
+        height: 50px;
+        width: auto;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 50%;
+        color: $off-white;
+
+        &:hover {
+          color: $purple;
+          background-color: $off-white;
+        }
+
+      }
+
+    }
+  }
+
+}
