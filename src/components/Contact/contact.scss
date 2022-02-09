@@ -1,7 +1,15 @@
-@import "../sassStyles/variables";
-@import "../sassStyles/mixins";
+@import "../../sassStyles/variables";
+@import "../../sassStyles/mixins";
 
 .contact {
+
+  header {
+    padding: 0 0 5% 0;
+  }
+
+  footer {
+    padding: 5% 0;
+  }
 
   main {
 

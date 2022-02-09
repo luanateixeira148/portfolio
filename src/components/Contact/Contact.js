@@ -9,7 +9,7 @@ function Contact () {
   return (
     <div className="contact">
       <header>
-        <h3 className="teal">&lt; contact &gt;</h3>
+        <h3 className="coral">&lt; contact &gt;</h3>
       </header>
       <main>
         <div className="email">
@@ -18,13 +18,16 @@ function Contact () {
           </p>
         </div>
         <div className="social-icons">
-          <FontAwesomeIcon icon={faLinkedinIn} className="social-icon" />
-          <FontAwesomeIcon icon={faGithub} className="social-icon" />
-          <FontAwesomeIcon icon={faTwitter} className="social-icon" />
+          <a href='https://www.linkedin.com/in/luanateixeira148/' target="_blank">
+            <FontAwesomeIcon icon={faLinkedinIn} className="social-icon" />
+          </a>
+          <a href="https://github.com/luanateixeira148/" target="_blank" >
+            <FontAwesomeIcon icon={faGithub} className="social-icon" />
+          </a>
         </div>
       </main>
       <footer>
-        <h3 className="teal">&lt;/ contact &gt;</h3>
+        <h3 className="coral">&lt;/ contact &gt;</h3>
       </footer>
     </div>
   );
