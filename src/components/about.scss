@@ -5,12 +5,17 @@
 @media (min-width: $desktop-width){
 
   .about {
-
-    height: 100vh;
     
     header, footer {
       color: $yellow;
-      padding: 5% 0;
+    }
+
+    header {
+      padding: 0 0 5% 0;
+    }
+
+    footer {
+      padding: 5% 0 0 0;
     }
     
     main {
@@ -29,11 +34,7 @@
         img {
           width: 350px;
           box-shadow: 10px 10px 0 $coral;
-
-          &:hover {
-            width: 370px;
-            box-shadow: 15px 15px 0 $coral;
-          }
+          
         }
       }
     }    

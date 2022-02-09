@@ -2,7 +2,7 @@ export const skillsArray = [
 
 {
 
-  title: 'Frontend Development',
+  title: 'Frontend Dev',
   description: 'This is a small description for frontend',
   skills: [
     'this', 'that', 'this', 'that', 'this', 'that', 'this', 'that'
@@ -12,7 +12,7 @@ export const skillsArray = [
 
 {
   
-  title: 'Backend Development',
+  title: 'Backend Dev',
   description: 'This is a small description for backend',
   skills: [
     'this', 'that', 'this', 'that', 'this', 'that', 'this', 'that'

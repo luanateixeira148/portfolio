@@ -1,6 +1,6 @@
-import "./card.scss";
+import "./skills-card.scss";
 
-function Card (props) {
+function SkillsCard (props) {
 
   const skill = props.skill;
 
@@ -18,4 +18,4 @@ function Card (props) {
 
 }
 
-export default Card;
+export default SkillsCard;

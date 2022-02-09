@@ -3,11 +3,15 @@
 
 
 .skill-card {
-
   @include flexCenter(column);
   background-color: $light-coral;
   padding: 10%;
-  padding-bottom: 50px;
+  padding-bottom: 15%;
+  height: 400px;
+
+  h2 {
+    margin-bottom: 5px;
+  }
 
   ul {
     list-style: none;
@@ -21,5 +25,4 @@
       line-height: 1.5;
     }
   }
-
 }

@@ -1,13 +1,52 @@
 @import '../../sassStyles/mixins';
+@import '../../sassStyles/variables';
 
-.skills {
 
+@media (max-width: ($desktop-width - 1)) {
+  .skills {
+    header {
+      padding: 5% 0;
+
+    }
+    footer {
+      padding: 5% 0 5% 0;
+
+    }
+    main {
+      @include flexCenter(row);
+
+      .swiper-container {
+        min-width: 300px;
+        max-width: 500px;
+      }
+
+      .skills-block-container {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  header {
+    padding: 5% 0;
+
+  }
+  footer {
+    padding: 5% 0 5% 0;
+
+  }
   main {
     @include flexCenter(row);
 
     .swiper-container {
-      width: 90%;
+      display: none;
+    }
+    .skills-block-container {
+
+      .skills-card-container {
+        border: solid $coral 1px;
+      }
     }
   }
-
 }
