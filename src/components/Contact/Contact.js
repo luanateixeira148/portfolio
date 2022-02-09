@@ -13,9 +13,11 @@ function Contact () {
       </header>
       <main>
         <div className="email">
-          <p className="off-white">
-            luanateixeira148@gmail.com
-          </p>
+          <a href="mailto:luanateixeira148@gmail.com">
+            <p className="off-white">
+              luanateixeira148@gmail.com
+            </p>
+          </a>
         </div>
         <div className="social-icons">
           <a href='https://www.linkedin.com/in/luanateixeira148/' target="_blank">
