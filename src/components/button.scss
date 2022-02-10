@@ -16,4 +16,11 @@
   box-shadow: -5px 5px 0px 0px $teal;
 
   margin: 10% 0 5% 5px;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: #5E12FF;
+    box-shadow: -7px 7px 0px 0px #00E4E7;
+  }
 }

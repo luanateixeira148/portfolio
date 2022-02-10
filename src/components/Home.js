@@ -1,21 +1,19 @@
 import "./home.scss";
-import Header from "./Header";
-import logo from "../assets/logo.svg";
+import Header from './Header';
 
 function Home () {
 
   return (
     <div className="home">
-      <Header />
+      <header>
+        <Header />
+      </header>
       <main>
         <div className="intro">
-          <h4 className="yellow">HELLO, WORLD!</h4>
-          <h1 className="off-white">I am Luana</h1>
-          <p className="off-white">A full stack developer <br />
-              located in Vancouver.</p>
-        </div>
-        <div className="illustration">
-          <div></div>
+          <h1 className="upper-title yellow">HELLO, WORLD!</h1>
+          <h1 className="title-name off-white">I am Luana</h1>
+          <p className="subtitle off-white">
+            A <mark>full stack developer</mark> based in Vancouver, Canada.</p>
         </div>
       </main>
     </div>

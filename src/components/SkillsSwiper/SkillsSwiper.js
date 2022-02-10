@@ -1,8 +1,8 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Card from './Card';
+import SkillsCard from '../SkillsCard/SkillsCard';
 import "swiper/css";
 import "swiper/css/pagination";
-import "./skillsswiper.scss";
+import "./skills-swiper.scss";
 import SwiperCore, { Pagination } from 'swiper';
 import { skillsArray } from '../../data-files/skills-array';
 
@@ -21,7 +21,7 @@ function SkillsSwiper () {
     >
       {skillsArray.map((skill) => (
         <SwiperSlide>
-          <Card 
+          <SkillsCard 
             skill={skill}
           />
         </SwiperSlide>
