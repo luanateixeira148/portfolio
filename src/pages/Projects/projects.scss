@@ -1,0 +1,13 @@
+@import "../../sassStyles/mixins";
+@import "../../sassStyles/variables";
+
+.projects-page {
+  main {
+    @include flexCenter(column);
+    
+    header {
+      padding: 0;
+      color: $teal;
+    }
+  }
+}

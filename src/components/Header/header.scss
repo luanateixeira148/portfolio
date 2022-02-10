@@ -1,0 +1,31 @@
+@import "../../sassStyles/variables";
+
+@media (min-width: $tablet-width) { 
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+    font-size: 30px; //defines arrow-left icon size
+    color: $off-white;
+
+    .logo {
+      width: 70px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) { 
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10%;
+    font-size: 30px; //defines arrow-left icon size
+    color: $off-white;
+
+    .logo {
+      width: 40px;
+    }
+  }
+}
