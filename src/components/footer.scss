@@ -3,4 +3,5 @@
 .footer {
   @include flexCenter(row);
   height: 50px;
+  margin-top: 10%;
 }

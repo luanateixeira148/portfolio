@@ -1,9 +1,10 @@
-@import "../sassStyles/mixins";
+@import "../../sassStyles/mixins";
+@import "../../sassStyles/variables";
 
 .project-card {
 
   @include flexCenter(column);
-  width: 100%;
+  max-width: 800px;
   margin-top: 20%;
 
   .project-card-img {
@@ -23,13 +24,16 @@
       font-size: 22px;
       margin-left: 20px;
     }
-
   }
 
   p {
-
     width: 70%;
 
   }
+}
 
+@media (min-width: $desktop-width) { 
+  .project-card {
+    margin-top: 10%;
+  }
 }

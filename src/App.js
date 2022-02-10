@@ -1,7 +1,7 @@
 import './App.scss';
-import Main from './pages/main';
+import Main from './pages/Main/main';
 import { Routes, Route, Link } from "react-router-dom";
-import Projects from './pages/projects';
+import Projects from './pages/Projects';
 
 function App() {
   return (

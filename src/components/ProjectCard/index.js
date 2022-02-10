@@ -1,4 +1,4 @@
-import lotify from "../assets/Lotify.png";
+import lotify from "../../assets/Lotify.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import "./project-card.scss";

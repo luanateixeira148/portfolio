@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import Button from "./Button";
-import lotify from "../assets/Lotify.png"
+import Button from "../Button";
+import lotify from "../../assets/Lotify.png"
 import "./projects.scss";
 
-function ProjectsComp () {
+function ProjectsGrid () {
 
   return (
     <div className="projects-comp-container">
@@ -31,4 +31,4 @@ function ProjectsComp () {
 
 }
 
-export default ProjectsComp;
+export default ProjectsGrid;
