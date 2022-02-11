@@ -1,4 +1,4 @@
-import "./button.scss";
+import "./primary-button.scss";
 
 function Button(props) {
 

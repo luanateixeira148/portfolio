@@ -1,7 +1,7 @@
-import "./home.scss";
-import Header from './Header';
+import "./hero.scss";
+import Header from '../Header';
 
-function Home () {
+function Hero () {
 
   return (
     <div className="home">
@@ -21,4 +21,4 @@ function Home () {
 
 }
 
-export default Home;
+export default Hero;

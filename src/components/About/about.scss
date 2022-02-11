@@ -1,8 +1,8 @@
-@import "../sassStyles/variables";
-@import "../sassStyles/mixins";
+@import "../../sassStyles/variables";
+@import "../../sassStyles/mixins";
 
 
-@media (min-width: $desktop-width){
+@media (min-width: $tablet-width){
 
   .about {
     
@@ -41,7 +41,7 @@
   }
 }
 
-@media (max-width: ($desktop-width - 1)){
+@media (max-width: $mobile-width){
 
   .about {
     
@@ -60,9 +60,7 @@
       aside {
         margin: 7%;
         img {
-          width: 350px;
-          box-shadow: 10px 10px 0 $coral;
-
+          width: 290px;
         }
       }
 

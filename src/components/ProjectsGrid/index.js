@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Button from "../Button";
+import PrimaryButton from "../PrimaryButton";
 import lotify from "../../assets/Lotify.png"
 import "./projects.scss";
 
@@ -19,7 +19,7 @@ function ProjectsGrid () {
         </div>
         <div className="projects-comp-button">
           <Link to="/projects">
-            <Button text={"SEE MORE"} />
+            <PrimaryButton text={"SEE MORE"} />
           </Link>
         </div>
       </main>

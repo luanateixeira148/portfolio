@@ -1,6 +1,6 @@
 import "./about.scss";
-import Button from "./Button";
-import profilePhoto from "../assets/profile_photo.jpg";
+import PrimaryButton from "../PrimaryButton";
+import profilePhoto from "../../assets/profile_photo.jpg";
 
 function About () {
 
@@ -22,7 +22,7 @@ function About () {
             I have a strong background in UI/UX Design, though my expertise lies in simple yet effective web and mobile development.
           </p>
           <div className="about-button">
-            <Button text={"RESUME (PDF)"} />
+            <PrimaryButton text={"RESUME (PDF)"} />
           </div>
         </div>
         <aside>

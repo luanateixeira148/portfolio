@@ -1,5 +1,5 @@
 import ProjectsComp from '../../components/ProjectsGrid';
-import Home from '../../components/Home';
+import Home from '../../components/Hero';
 import About from '../../components/About';
 import Skills from '../../components/Skills/Skills';
 import Contact from '../../components/Contact/Contact';
