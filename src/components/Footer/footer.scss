@@ -1,7 +1,10 @@
 @import "../../sassStyles/mixins";
 
 .footer {
-  @include flexCenter(row);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   height: 50px;
   margin-top: 10%;
+  padding-bottom: 30px;
 }

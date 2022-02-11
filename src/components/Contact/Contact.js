@@ -13,9 +13,9 @@ function Contact () {
       <main>
         <div className="email">
           <a href="mailto:luanateixeira148@gmail.com">
-            <p className="off-white">
+            <h2 className="off-white">
               luanateixeira148@gmail.com
-            </p>
+            </h2>
           </a>
         </div>
         <div className="social-icons">
