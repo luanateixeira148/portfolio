@@ -18,7 +18,7 @@ function ProjectsGrid () {
           <img src={lotify} alt="Lotify" className="projects-comp-img"/>
         </div>
         <div className="projects-comp-button">
-          <Link to="/projects">
+          <Link to="/portfolio/projects">
             <PrimaryButton text={"SEE MORE"} />
           </Link>
         </div>

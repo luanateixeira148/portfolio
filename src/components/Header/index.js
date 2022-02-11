@@ -8,10 +8,10 @@ function Header () {
 
   return (
     <div className="header">
-        <Link to="/">
+        <Link to="/portfolio">
           <FontAwesomeIcon icon={faAngleLeft} className="icon"/>
         </Link>
-        <Link to="/">
+        <Link to="/portfolio">
           <img src={logo} className="logo"/>
         </Link>
     </div>
