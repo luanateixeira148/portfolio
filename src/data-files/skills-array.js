@@ -2,20 +2,18 @@ export const skillsArray = [
 
 {
 
-  title: 'Frontend Dev',
-  description: 'This is a small description for frontend',
+  title: 'Frontend Development',
   skills: [
-    'this', 'that', 'this', 'that', 'this', 'that', 'this', 'that'
+    'HTML/CSS', 'JavaScript', 'ReactJS', 'React Native', 'TypeScript', 'jQuery', 'SASS', 'Styled-Components', 'Bootstrap', 'Axios'
   ]
 
 },
 
 {
   
-  title: 'Backend Dev',
-  description: 'This is a small description for backend',
+  title: 'Backend Development',
   skills: [
-    'this', 'that', 'this', 'that', 'this', 'that', 'this', 'that'
+    'Express', 'NodeJS', 'SQL', 'PostgreSQL', 'Ruby on Rails', 'Docker', 'Google Cloud Functions', 'GraphQL'
   ]
 
 },
@@ -23,12 +21,11 @@ export const skillsArray = [
 {
   
   title: 'Design',
-  description: 'This is a small description for design',
   skills: [
-    'this', 'that', 'this', 'that', 'this', 'that', 'this', 'that'
+    'Resposive Design', 'UI graphics & Illustrations', 'UX Design & Research', 'Mockups & Wireframes', 'Figma', ' Illustrator', 'Photoshop', 'Balsamiq', 'Sketch', 'Adobe XD', 'Wordpress', 'Webflow'
   ]
 
-},
+}
 
 ];
 

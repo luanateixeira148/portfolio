@@ -8,7 +8,7 @@ function Contact () {
   return (
     <div className="contact">
       <header>
-        <h3 className="coral">&lt; contact &gt;</h3>
+        <h3>&lt; contact &gt;</h3>
       </header>
       <main>
         <div className="email">
@@ -28,7 +28,7 @@ function Contact () {
         </div>
       </main>
       <footer>
-        <h3 className="coral">&lt;/ contact &gt;</h3>
+        <h3>&lt;/ contact &gt;</h3>
       </footer>
     </div>
   );

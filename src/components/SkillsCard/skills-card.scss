@@ -6,23 +6,38 @@
   @include flexCenter(column);
   background-color: $light-coral;
   padding: 10%;
-  padding-bottom: 15%;
-  height: 400px;
+  height: 500px;
+  width: 300px;
 
-  h2 {
-    margin-bottom: 5px;
+  header {
+    @include flexCenter(column);
+    height: 20%;
+    width: 100%;
+
+    h2 {
+      text-align: center;
+    }
   }
 
-  ul {
-    list-style: none;
-    padding: 0;
+  .skills-list {
+    height: 80%;
+    text-align: center;
 
-    li {
-      font-family: 'Exo 2', sans-serif;
-      font-weight: 300;
-      font-style: normal;
-      font-size: 16px;
-      line-height: 1.5;
+    ul {
+      list-style: none;
+      padding: 0;
+      
+      li {
+        font-family: 'Exo 2', sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 1.5;
+
+        &:hover {
+          color: $coral;
+        }
+      }
     }
   }
 }

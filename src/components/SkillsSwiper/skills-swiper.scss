@@ -1,5 +1,10 @@
 @import "../../sassStyles/variables";
 
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
 .swiper-pagination ::v-deep
   .swiper-pagination-bullet {
     opacity: 1;
