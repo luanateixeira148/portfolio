@@ -7,7 +7,7 @@ import { projectArray } from "../../data-files/projects-array";
 function Projects() {
   return (
     <div className="projects-page">
-      <Header />
+      <Header showBackIcon={true} />
       <main>
         <header>
           <h1>Projects</h1>

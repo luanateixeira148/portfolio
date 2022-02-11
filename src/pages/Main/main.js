@@ -1,15 +1,17 @@
 import ProjectsComp from '../../components/ProjectsGrid';
-import Home from '../../components/Hero';
+import Hero from '../../components/Hero';
 import About from '../../components/About';
 import Skills from '../../components/Skills/Skills';
 import Contact from '../../components/Contact/Contact';
 import Footer from '../../components/Footer';
+import Header from '../../components/Header';
 import "./main-page.scss";
 
 function Main() {
   return (
     <div className="main">
-      <Home />
+      <Header />
+      <Hero />
       <ProjectsComp />
       <About />
       <Skills />

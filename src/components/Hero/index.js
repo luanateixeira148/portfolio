@@ -5,9 +5,6 @@ function Hero () {
 
   return (
     <div className="home">
-      <header>
-        <Header />
-      </header>
       <main>
         <div className="intro">
           <h1 className="upper-title yellow">HELLO, WORLD!</h1>

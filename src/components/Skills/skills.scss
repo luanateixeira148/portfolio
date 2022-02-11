@@ -5,12 +5,13 @@
 @media (max-width: ($desktop-width - 1)) {
   .skills {
     header {
-      padding: 5% 0;
-
+      color: $coral;
+      padding: 5% 0 20% 0;
     }
-    footer {
-      padding: 5% 0 5% 0;
 
+    footer {
+      color: $coral;
+      padding: 20% 0 5% 0;
     }
     main {
       @include flexCenter(row);
@@ -29,10 +30,12 @@
 
 @media (min-width: $desktop-width) {
   header {
+    color: $coral;
     padding: 5% 0;
 
   }
   footer {
+    color: $coral;
     padding: 5% 0 5% 0;
 
   }

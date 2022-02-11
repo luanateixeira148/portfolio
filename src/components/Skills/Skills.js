@@ -6,7 +6,7 @@ function Skills () {
 
   return (
     <div className="skills">
-      <header className="teal">
+      <header>
         <h3>&lt; skills &gt;</h3>
       </header>
 
@@ -18,7 +18,7 @@ function Skills () {
           <SkillsBlock />
         </div>
       </main>
-      <footer className="teal">
+      <footer>
         <h3>&lt;/ skills &gt;</h3>
       </footer>
     </div>

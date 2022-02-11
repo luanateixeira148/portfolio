@@ -6,8 +6,17 @@
     justify-content: space-between;
     align-items: center;
     padding: 5%;
-    font-size: 30px; //defines arrow-left icon size
     color: $off-white;
+
+    .icon {
+      color: $off-white;
+      font-size: 40px;
+
+      &:hover {
+        font-size: 50px;
+        color: $teal;
+      }
+    }
 
     .logo {
       width: 70px;
@@ -22,7 +31,11 @@
     align-items: center;
     padding: 10%;
     font-size: 30px; //defines arrow-left icon size
-    color: $off-white;
+
+    .icon {
+      color: $off-white;
+      font-size: 30px;
+    }
 
     .logo {
       width: 40px;

@@ -4,11 +4,13 @@
 .contact {
 
   header {
-    padding: 0 0 5% 0;
+    color: $teal;
+    padding: 5% 0 20% 0;
   }
 
   footer {
-    padding: 5% 0;
+    color: $teal;
+    padding: 20% 0 5% 0;
   }
 
   main {
@@ -16,7 +18,7 @@
     @include flexCenter(column);
 
     .email {
-      margin: 10px;
+      margin-bottom: 50px;
 
       a {
         text-decoration: none;

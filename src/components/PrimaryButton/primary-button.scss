@@ -20,7 +20,17 @@
   cursor: pointer;
 
   &:hover {
+    height: 50px;
+    width: 160px;
     background-color: #5E12FF;
     box-shadow: -7px 7px 0px 0px #00E4E7;
   }
+}
+
+@media (max-width: $mobile-width) { 
+
+  .button-3d {
+    margin: 30% 0 5% 5px;
+  }
+
 }
