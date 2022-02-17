@@ -22,7 +22,9 @@ function About () {
             I have a strong background in UI/UX Design, though my expertise lies in simple yet effective web and mobile development.
           </p>
           <div className="about-button">
-            <PrimaryButton text={"RESUME (PDF)"} />
+            <a href="/pdfs/resume.pdf" target="_blank" type="application/pdf">
+              <PrimaryButton text={"RESUME (PDF)"} />
+            </a>
           </div>
         </div>
         <aside>
