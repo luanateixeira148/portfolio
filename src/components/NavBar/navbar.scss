@@ -6,13 +6,12 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  padding: 30px;
 }
 
 @media (min-width: $desktop-min-width) {
 
   .navbar {
-    margin: 3% 0;
-
     .logo-container {
       .logo {
         width: 50px;
@@ -50,8 +49,6 @@
 
 @media (max-width: $mobile-max-width) {
   .navbar {
-    margin: 6% 0;
-
     .logo-container {
       .logo {
         width: 40px;
@@ -66,6 +63,9 @@
       color: $purple;
       font-size: 25px;
 
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }

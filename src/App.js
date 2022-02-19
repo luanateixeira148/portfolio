@@ -9,7 +9,7 @@ function App() {
     // <div className='coming-soon'>
     //   <h1 className='coral'>Coming soon!</h1>
     // </div>
-    <div className="app">
+    <div className="app" id="app">
       <NavBar />
       <Routes>
         <Route path="/portfolio" element={<Main />} />

@@ -8,7 +8,7 @@ import "./main-page.scss";
 
 function Main() {
   return (
-    <div className="main">
+    <div className="main" id='main'>
       <Hero />
       <ProjectsComp />
       <About />
