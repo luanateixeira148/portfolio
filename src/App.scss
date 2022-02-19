@@ -10,8 +10,15 @@ body {
   margin: 0;
 }
 
-.App {
-  background-color: $dark-purple;
+.app {
+  background-color: $light-coral;
   padding: 0 5%;
   min-width: 300px;
+  @include flexCenter(column)
+}
+
+.coming-soon {
+  height: 100vh;
+  width: 100vw;
+  @include flexCenter(row)
 }

@@ -1,5 +1,4 @@
 import "./hero.scss";
-import Header from '../Header';
 
 function Hero () {
 

@@ -1,0 +1,71 @@
+@import "../../sassStyles/variables";
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+@media (min-width: $desktop-min-width) {
+
+  .navbar {
+    margin: 3% 0;
+
+    .logo-container {
+      .logo {
+        width: 50px;
+
+        &:hover {
+          transform: rotate(180deg);
+        }
+
+      }
+    }
+    .nav-links {
+      display: flex;
+      flex-direction: row;
+      
+      .nav-link {
+        margin: 0 25px;
+        color: $purple;
+        text-decoration: none;
+
+        &:hover {
+          color: $coral;
+        }
+
+        &:active {
+          color: $coral;
+          text-decoration: none;
+        }
+      }
+    }
+    .burger-menu {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .navbar {
+    margin: 6% 0;
+
+    .logo-container {
+      .logo {
+        width: 40px;
+
+      }
+    }
+    .nav-links {
+      display: none;
+
+    }
+    .burger-menu {
+      color: $purple;
+      font-size: 25px;
+
+    }
+  }
+}
