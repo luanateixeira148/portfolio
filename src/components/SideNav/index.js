@@ -37,6 +37,15 @@ function SideNav(props) {
           >
           <h2>Contact</h2>
         </HashLink>
+        <a 
+          href={process.env.PUBLIC_URL + "/resume.pdf"} 
+          target="_blank" 
+          type="application/pdf"
+          className="side-nav-link" 
+          onClick={() => props.setMenuOpen(false)}
+        >
+          <h2>Resume</h2>
+        </a>
       </div>
     </div>
   );

@@ -32,6 +32,14 @@ function NavBar() {
         <HashLink to="/portfolio#contact" className="nav-link">
           <h6>Contact</h6>
         </HashLink>
+        <a 
+          href={process.env.PUBLIC_URL + "/resume.pdf"} 
+          target="_blank" 
+          type="application/pdf"
+          className="nav-link"
+        >
+          <h6>Resume</h6>
+        </a>
       </div>
       <div className="burger-menu" id="burger-menu">
         <FontAwesomeIcon 
