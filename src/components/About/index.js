@@ -1,10 +1,14 @@
 import "./about.scss";
 import PrimaryButton from "../PrimaryButton";
+import SectionTags from "../SectionTags";
 
 function About () {
   
   return (
     <div className="about" id="about">
+      <SectionTags 
+        text={"< about >"}
+      />
       <main>
         <div className="bio">
           <p>
@@ -24,6 +28,9 @@ function About () {
           src={process.env.PUBLIC_URL + "/images/luana.png"} className="profile-photo"
         />
       </main>
+      <SectionTags 
+        text={"</ about >"}
+      />
     </div>
   );
 

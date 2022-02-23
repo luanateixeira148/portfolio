@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import PrimaryButton from "../PrimaryButton";
+import SectionTags from "../SectionTags";
 import { projectArray } from "../../data-files/projects-array";
 import "./projects.scss";
 
@@ -7,6 +8,9 @@ function ProjectsGrid () {
 
   return (
     <div className="projects-comp-container">
+      <SectionTags 
+        text={"< projects >"}
+      />
       <main>
         <div className="projects-comp-grid">
           {projectArray.map((project) => (
@@ -25,6 +29,9 @@ function ProjectsGrid () {
           </Link>
         </div>
       </main>
+      <SectionTags 
+        text={"</ projects >"}
+      />
     </div>
   );
 

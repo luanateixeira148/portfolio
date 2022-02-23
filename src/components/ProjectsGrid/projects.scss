@@ -18,7 +18,6 @@
 
 @media (min-width: $desktop-min-width) {
   .projects-comp-container {
-    margin: 0 30px;
   
     main {
       @include flexCenter(column);
