@@ -5,9 +5,9 @@
 .skill-card {
   @include flexCenter(column);
   background-color: $light-coral;
+  border: solid 0.5px $purple;
+  margin: 2px;
   padding: 10%;
-  height: 500px;
-  width: 300px;
 
   header {
     @include flexCenter(column);
@@ -16,12 +16,19 @@
 
     h2 {
       text-align: center;
+      color: $coral;
     }
   }
 
   .skills-list {
     height: 80%;
     text-align: center;
+
+    hr {
+      width: 30%;
+      margin-bottom: 20px;
+      border: solid 0.5px $purple;
+    }
 
     ul {
       list-style: none;
@@ -33,6 +40,7 @@
         font-style: normal;
         font-size: 16px;
         line-height: 1.5;
+        color: $dark-purple;
 
         &:hover {
           color: $coral;
@@ -40,4 +48,35 @@
       }
     }
   }
+}
+
+
+@media (min-width: $desktop-min-width) {
+  .skill-card {
+    @include flexCenter(column);
+    background-color: $light-coral;
+    border: solid 0.5px $purple;
+    margin: 2px;
+    padding: 10%;
+    height: 460px;
+    width: 240px;
+  }  
+}
+
+@media (max-width: $mobile-max-width) {
+  .skill-card {
+    @include flexCenter(column);
+    background-color: $light-coral;
+    border: solid 0.5px $purple;
+    padding: 10px 10% 10% 10%;
+    height: 520px;
+    width: 280px;
+
+    .skills-list {
+      hr {
+        display: none;
+
+      }
+    }
+  }  
 }

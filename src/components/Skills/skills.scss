@@ -1,22 +1,22 @@
 @import '../../sassStyles/mixins';
 @import '../../sassStyles/variables';
 
-
-@media (max-width: ($desktop-width - 1)) {
+@media (min-width: $desktop-min-width) {
   .skills {
-    header {
-      color: $coral;
-      padding: 5% 0 20% 0;
+    main {
+      .swiper-container {
+        display: none;
+  
+      }
     }
+  }
+}
 
-    footer {
-      color: $coral;
-      padding: 20% 0 5% 0;
-    }
+@media (max-width: $mobile-max-width) {
+  .skills {
     main {
       display: flex;
       justify-content: center;
-      // align-items: center;
 
       .swiper-container {
         min-width: 300px;
@@ -25,31 +25,6 @@
 
       .skills-block-container {
         display: none;
-      }
-    }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  header {
-    color: $coral;
-    padding: 5% 0;
-
-  }
-  footer {
-    color: $coral;
-    padding: 5% 0 0 0;
-
-  }
-  main {
-    .swiper-container {
-      display: none;
-
-    }
-    .skills-block-container {
-      .skills-card-container {
-        border: solid rgb(206, 192, 192) 0.5px;
-
       }
     }
   }

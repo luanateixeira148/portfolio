@@ -7,12 +7,13 @@ function SkillsCard (props) {
   return (
     <div className="skill-card">
       <header>
-        <h2 className="coral">{skill.title}</h2>
+        <h2>{skill.title}</h2>
       </header>
       <main className="skills-list">
+        <hr />
         <ul>
           {skill.skills.map((item) => (
-            <li className="off-black">{item}</li>
+            <li>{item}</li>
             ))}
         </ul>
       </main>

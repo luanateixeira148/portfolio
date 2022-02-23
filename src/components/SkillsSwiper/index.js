@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SkillsCard from '../SkillsCard/SkillsCard';
+import SkillsCard from '../SkillsCard';
 import "swiper/css";
 import "swiper/css/pagination";
 import "./skills-swiper.scss";

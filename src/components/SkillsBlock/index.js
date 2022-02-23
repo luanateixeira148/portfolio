@@ -1,4 +1,4 @@
-import SkillsCard from '../SkillsCard/SkillsCard';
+import SkillsCard from '../SkillsCard';
 import './skills-block.scss';
 import { skillsArray } from '../../data-files/skills-array';
 
