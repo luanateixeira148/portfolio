@@ -1,6 +1,10 @@
 @import "../../sassStyles/variables";
 
 .navbar {
+  position: absolute;
+  top: 0;
+  background-color: $light-coral;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -28,7 +32,7 @@
       
       .nav-link {
         margin: 0 25px;
-        color: $purple;
+        color: $dark-purple;
         text-decoration: none;
 
         &:hover {
@@ -60,7 +64,7 @@
 
     }
     .burger-menu {
-      color: $purple;
+      color: $dark-purple;
       font-size: 25px;
 
       &:hover {

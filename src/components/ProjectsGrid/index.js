@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import PrimaryButton from "../PrimaryButton";
-import lotify from "../../assets/Lotify.png"
+import { projectArray } from "../../data-files/projects-array";
 import "./projects.scss";
 
 function ProjectsGrid () {
@@ -12,14 +12,19 @@ function ProjectsGrid () {
       </header>
       <main>
         <div className="projects-comp-grid">
-          <img src={lotify} alt="Lotify" className="projects-comp-img"/>
-          <img src={lotify} alt="Lotify" className="projects-comp-img"/>
-          <img src={lotify} alt="Lotify" className="projects-comp-img"/>
-          <img src={lotify} alt="Lotify" className="projects-comp-img"/>
+          {projectArray.map((project) => (
+            <img 
+              src={process.env.PUBLIC_URL + project.img_url}
+              alt="Lotify" 
+              className="projects-comp-img"
+            />
+          ))}
         </div>
-        <div className="projects-comp-button">
-          <Link to="/portfolio/projects">
-            <PrimaryButton text={"SEE MORE"} />
+        <div className="button">
+          <Link to="/portfolio/projects" className="nav-link">
+            <PrimaryButton 
+              text={"SEE MORE"} 
+            />
           </Link>
         </div>
       </main>

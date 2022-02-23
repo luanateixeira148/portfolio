@@ -11,10 +11,10 @@ function Main() {
     <div className="main" id='main'>
       <Hero />
       <ProjectsComp />
-      <About />
+      {/* <About />
       <Skills />
       <Contact />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

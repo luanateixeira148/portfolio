@@ -8,11 +8,13 @@
 
 body {
   margin: 0;
+  padding: 0;
 }
 
 .app {
   background-color: $light-coral;
   min-width: 300px;
+  // width: 100vw;
   @include flexCenter(column)
 }
 
