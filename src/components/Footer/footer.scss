@@ -1,10 +1,39 @@
 @import "../../sassStyles/mixins";
+@import "../../sassStyles/variables";
 
 .footer {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  height: 50px;
+  justify-content: space-between;
   margin-top: 10%;
-  padding-bottom: 30px;
+  padding: 20px 30px;
+
+  a {
+    text-decoration: none;
+    color: $dark-purple;
+
+    &:hover {
+      color: $coral;
+    }
+  }
+
+  .social-icons {
+    @include flexCenter(row);
+    font-size: 45px; //defines the size of each social icon
+    color: $dark-purple;
+
+    .social-icon {
+      padding: 10px;
+      margin: 5px;
+      border-radius: 50%;
+      color: $dark-purple;
+
+      &:hover {
+        color: $off-white;
+        background-color: $dark-purple;
+      }
+
+    }
+
+  }
 }

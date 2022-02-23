@@ -2,7 +2,7 @@ import ProjectsComp from '../../components/ProjectsGrid';
 import Hero from '../../components/Hero';
 import About from '../../components/About';
 import Skills from '../../components/Skills';
-import Contact from '../../components/Contact/Contact';
+import Contact from '../../components/Contact';
 import Footer from '../../components/Footer';
 import "./main-page.scss";
 
@@ -13,8 +13,8 @@ function Main() {
       <ProjectsComp />
       <About />
       <Skills />
-      {/* <Contact />
-      <Footer /> */}
+      <Contact />
+      <Footer />
     </div>
   );
 }
