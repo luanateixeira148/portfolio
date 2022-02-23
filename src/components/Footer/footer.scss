@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
   margin-top: 10%;
   padding: 20px 30px;
 
@@ -21,6 +22,10 @@
     @include flexCenter(row);
     font-size: 45px; //defines the size of each social icon
     color: $dark-purple;
+
+    #email-icon {
+      font-size: 40px;
+    }
 
     .social-icon {
       padding: 10px;

@@ -1,6 +1,4 @@
 import lotify from "../../assets/Lotify.png";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import "./project-card.scss";
 
 function ProjectCard(props) {
@@ -8,12 +6,14 @@ function ProjectCard(props) {
 
   return (
     <div className="project-card">
-      <img src={lotify} alt="Lotify" className="project-card-img"/>
-      <span className="title">
-        <h2 className="off-white">{project.title}</h2>
-        <FontAwesomeIcon icon={faGithub} className="off-white icon"/>
-      </span>
-      <p className="off-white">{project.description}</p>
+      <a href={project.project_url} target="_blank" >
+        <img src={lotify} alt="Lotify" className="project-card-img" />
+      </a>
+      <a href={project.project_url} target="_blank" >
+        <h2>{project.title}</h2>
+      </a>
+      <p>{project.description}</p>
+      <p><span>Tech Stack: </span>{project.tech_stack}</p>
     </div>
   );
 }

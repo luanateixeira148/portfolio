@@ -16,7 +16,6 @@ function Projects() {
           />
         ))}
       </main>
-      <Footer />
     </div>
   );
 }

@@ -2,38 +2,32 @@
 @import "../../sassStyles/variables";
 
 .project-card {
-
-  @include flexCenter(column);
-  max-width: 800px;
   margin-top: 20%;
 
   .project-card-img {
-    width: 70%;
+    width: 100%;
+    margin-bottom: 25px;
   }
 
-  .title {
+  a {
+    width: 100%;
+    text-decoration: none;
+    color: $dark-purple;
 
-    width: 70%;
-    max-width: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 5%;
+    &:hover {
+      color: $coral;
+    }
 
-    .icon {
-      font-size: 22px;
-      margin-left: 20px;
+    h2 {
+      margin-bottom: 15px;
     }
   }
 
   p {
-    width: 70%;
+    margin-bottom: 10px;
 
-  }
-}
-
-@media (min-width: $desktop-width) { 
-  .project-card {
-    margin-top: 10%;
+    span {
+      font-weight: 500;
+    }
   }
 }
