@@ -7,9 +7,6 @@ function ProjectsGrid () {
 
   return (
     <div className="projects-comp-container">
-      <header>
-        <h3>&lt; projects &gt;</h3>
-      </header>
       <main>
         <div className="projects-comp-grid">
           {projectArray.map((project) => (
@@ -20,7 +17,7 @@ function ProjectsGrid () {
             />
           ))}
         </div>
-        <div className="button">
+        <div className="projects-button">
           <Link to="/portfolio/projects" className="nav-link">
             <PrimaryButton 
               text={"SEE MORE"} 
@@ -28,9 +25,6 @@ function ProjectsGrid () {
           </Link>
         </div>
       </main>
-      <footer>
-        <h3>&lt;/ projects &gt;</h3>
-      </footer>
     </div>
   );
 

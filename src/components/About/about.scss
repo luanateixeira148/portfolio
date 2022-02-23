@@ -1,81 +1,48 @@
 @import "../../sassStyles/variables";
 @import "../../sassStyles/mixins";
 
-
-@media (min-width: $tablet-width){
-
+@media (min-width: $desktop-min-width) {
   .about {
-    
-    header, footer {
-      color: $yellow;
-    }
-
-    header {
-      padding: 0 0 5% 0;
-    }
-
-    footer {
-      padding: 5% 0 0 0;
-    }
-    
     main {
       @include flexCenter(row);
-      padding: 0 10%;
-
+      margin: 0 50px;
+  
       .bio {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        width: 40%;
+        max-width: 300px;
+        padding-right: 10px;
+        
+      }
+      .profile-photo {
+        width: 60%;
+        max-width: 500px;
+        padding-left: 10px;
 
       }
-      aside {
-        margin: 0 0 0 5%;
-
-        img {
-          width: 350px;
-          box-shadow: 10px 10px 0 $coral;
-          
-        }
-      }
-    }    
+    }
   }
 }
 
-@media (max-width: $mobile-width){
-
+@media (max-width: $mobile-max-width) {
   .about {
-    
-    header {
-      color: $yellow;
-      padding: 5% 0 20% 0;
-    }
-
-    footer {
-      color: $yellow;
-      padding: 20% 0 5% 0;
-    }
-    
     main {
       display: flex;
       flex-direction: column-reverse;
       justify-content: center;
       align-items: center;
-      padding: 0 10%;
-
-      aside {
-        margin: 7%;
-        img {
-          width: 290px;
-        }
-      }
+      margin: 30px;
 
       .bio {
         @include flexCenter(column);
-        
-        .about-button {
-          margin: 5% 0 0 0;
-        }
+        width: 70%;
+        text-align: center;
+        margin-top: 20px;
+        color: $dark-purple;
+
       }
-    }    
+      .profile-photo {
+        width: 70%;
+      }
+    }
   }
 }

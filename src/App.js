@@ -1,5 +1,5 @@
 import './App.scss';
-import Main from './pages/Main/main';
+import Main from './pages/Main';
 import { Routes, Route, Link } from "react-router-dom";
 import Projects from './pages/Projects';
 import NavBar from './components/NavBar';

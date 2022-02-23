@@ -1,20 +1,13 @@
 import "./about.scss";
 import PrimaryButton from "../PrimaryButton";
-import profilePhoto from "../../assets/profile_photo.jpg";
 
 function About () {
-
+  
   return (
     <div className="about" id="about">
-      <header>
-        <h3>&lt; about &gt;</h3>
-      </header>
       <main>
         <div className="bio">
-          <p className="off-white">
-            With a passion for learning, I am fascinated with Human-Computer Interactions and user-centred design.
-            I have a strong background in UI/UX Design, though my expertise lies in simple yet effective web and mobile development.
-            <br />
+          <p>
             With a passion for learning, I am fascinated with Human-Computer Interactions and user-centred design.
             I have a strong background in UI/UX Design, though my expertise lies in simple yet effective web and mobile development.
             <br />
@@ -27,13 +20,10 @@ function About () {
             </a>
           </div>
         </div>
-        <aside>
-          <img src={profilePhoto} className="profile-photo"/>
-        </aside>
+        <img 
+          src={process.env.PUBLIC_URL + "/images/luana.png"} className="profile-photo"
+        />
       </main>
-      <footer>
-        <h3>&lt;/ about &gt;</h3>
-      </footer>
     </div>
   );
 

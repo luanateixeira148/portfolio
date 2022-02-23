@@ -3,11 +3,6 @@
 
 .projects-comp-container {
 
-  header, footer {
-    color: $purple;
-    margin: 20px 30px;
-  }
-
   main {
     @include flexCenter(column);
     .projects-comp-grid {
@@ -16,7 +11,6 @@
 
       &:hover .projects-comp-img:not(:hover) {
         filter: grayscale(70%);
-
       }
     }
   }
@@ -39,7 +33,7 @@
           width: 300px;
         }
       }
-      .button {
+      .projects-button {
         margin: 50px;
       }
     }

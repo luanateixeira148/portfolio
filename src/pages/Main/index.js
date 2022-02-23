@@ -11,8 +11,8 @@ function Main() {
     <div className="main" id='main'>
       <Hero />
       <ProjectsComp />
-      {/* <About />
-      <Skills />
+      <About />
+      {/* <Skills />
       <Contact />
       <Footer /> */}
     </div>
