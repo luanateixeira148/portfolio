@@ -13,6 +13,7 @@
     .intro {
       .upper-title {
         color: $purple;
+        font-size: 20px;
 
       }
       .title-name {
@@ -21,6 +22,7 @@
       }
       .subtitle {
         color: $dark-purple;
+        font-size: 20px;
 
         span {
           color: $coral;
@@ -46,7 +48,6 @@
     main {
       .intro {
         .upper-title {
-          font-size: 20px;
           margin: 0 0 0 0.3em;
 
         }
@@ -55,7 +56,6 @@
           margin: 0 0 0.1em 0;
         }
         .subtitle {
-          font-size: 20px;
           margin: 0 0 0 0.4em;
         }
       }
@@ -71,17 +71,10 @@
     
     main {
       .intro {
-        .upper-title {
-          font-size: 16px;
-        
-        }
         .title-name {
           font-size: 50px;
           margin: 0.1em 0 0.2em 0;
 
-        }
-        .subtitle {
-          font-size: 16px;
         }
       }
     }
