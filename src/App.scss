@@ -14,12 +14,5 @@ body {
 .app {
   background-color: $light-coral;
   min-width: 300px;
-  // width: 100vw;
   @include flexCenter(column)
-}
-
-.coming-soon {
-  height: 100vh;
-  width: 100vw;
-  @include flexCenter(row)
 }

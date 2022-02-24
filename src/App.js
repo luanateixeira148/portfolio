@@ -7,9 +7,6 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    // <div className='coming-soon'>
-    //   <h1 className='coral'>Coming soon!</h1>
-    // </div>
     <div className="app" id="app">
       <NavBar />
       <Routes>
