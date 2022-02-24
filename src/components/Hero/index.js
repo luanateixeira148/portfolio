@@ -9,7 +9,7 @@ function Hero () {
           <h1 className="upper-title">HELLO, WORLD!</h1>
           <h1 className="title-name">I'm Luana</h1>
           <p className="subtitle">
-            I'm a junior <span>full-stack developer</span> based in Vancouver.
+            I'm a <span>full-stack developer</span> based in Vancouver.
           </p>
         </div>
       </main>
