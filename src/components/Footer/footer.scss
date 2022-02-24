@@ -37,8 +37,14 @@
         color: $off-white;
         background-color: $dark-purple;
       }
-
     }
+  }
+}
 
+@media (max-width: $mobile-max-width) {
+  .footer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
   }
 }
