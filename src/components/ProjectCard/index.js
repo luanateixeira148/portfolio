@@ -1,4 +1,3 @@
-import lotify from "../../assets/Lotify.png";
 import "./project-card.scss";
 
 function ProjectCard(props) {
@@ -7,7 +6,7 @@ function ProjectCard(props) {
   return (
     <div className="project-card">
       <a href={project.project_url} target="_blank" >
-        <img src={lotify} alt="Lotify" className="project-card-img" />
+        <img src={process.env.PUBLIC_URL + project.img_url} alt="Lotify" className="project-card-img" />
       </a>
       <a href={project.project_url} target="_blank" >
         <h2>{project.title}</h2>

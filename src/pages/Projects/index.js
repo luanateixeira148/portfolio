@@ -1,5 +1,4 @@
 import './projects.scss';
-import Footer from "../../components/Footer";
 import ProjectCard from "../../components/ProjectCard";
 import { projectArray } from "../../data-files/projects-array";
 
