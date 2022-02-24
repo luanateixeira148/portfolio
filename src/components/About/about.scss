@@ -43,13 +43,14 @@
 
       .bio {
         @include flexCenter(column);
-        width: 70%;
+        width: 80%;
         text-align: center;
         margin-top: 20px;
         color: $dark-purple;
 
         p {
           margin-bottom: 10px;
+          font-size: 18px;
 
           span {
             font-weight: 500;

@@ -1,25 +1,26 @@
 @import "../../sassStyles/variables";
 
-.button-3d {
+.primary-button {
+
   height: 40px;
   width: 150px;
-  background-color: $purple;
+  background-color: $light-coral;
 
   font-family: 'Exo 2', sans-serif;
   font-weight: 800; //extra-bold
   font-style: normal;
   font-size: 14px;
-  color: $off-white;
+  color: $purple;
   letter-spacing: 0.12em;
 
-  border: none;
-  box-shadow: -5px 5px 0px 0px $teal;
+  border: 2px solid $purple;
 
-  margin: 10% 0 5% 5px;
+  margin: 10% 0 0 0;
 
   cursor: pointer;
 
   &:hover {
-    background-color: #5E12FF;
+    background-color: $purple;
+    color: $off-white;
   }
 }

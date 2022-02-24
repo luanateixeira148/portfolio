@@ -3,7 +3,7 @@ import "./primary-button.scss";
 function PrimaryButton(props) {
 
   return (
-    <button className="button-3d">{props.text}</button>
+    <button className="primary-button">{props.text}</button>
   );
 
 }
