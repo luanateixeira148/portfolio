@@ -14,13 +14,14 @@
 
 @media (max-width: $mobile-max-width) {
   .skills {
+    width: 100vw;
+    
     main {
       display: flex;
       justify-content: center;
 
       .swiper-container {
-        min-width: 300px;
-        max-width: 500px;
+        width: 300px;
       }
 
       .skills-block-container {
