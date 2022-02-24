@@ -13,7 +13,7 @@
   main {
     .intro {
       .upper-title {
-        color: $coral;
+        color: $purple;
 
       }
       .title-name {
@@ -24,15 +24,14 @@
         color: $dark-purple;
 
         span {
-          // background-color: ;
-          // border-radius: 2px;
-          // padding: 0.1em 0.2em 0.2em 0.2em;
-          // color: $off-white;
           color: $coral;
           font-weight: 400;
+          padding: 0 2px;
 
           &:hover {
             background-color: $purple;
+            color: $off-white;
+            border-radius: 3px;
           }
         }
       }

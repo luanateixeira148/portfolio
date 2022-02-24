@@ -11,6 +11,15 @@
         width: 40%;
         max-width: 300px;
         padding-right: 10px;
+
+        p {
+          margin-bottom: 10px;
+
+          span {
+            font-weight: 500;
+            color: $coral;
+          }
+        }
         
       }
       .profile-photo {
@@ -38,6 +47,15 @@
         text-align: center;
         margin-top: 20px;
         color: $dark-purple;
+
+        p {
+          margin-bottom: 10px;
+
+          span {
+            font-weight: 500;
+            color: $coral;
+          }
+        }
 
       }
       .profile-photo {

@@ -13,7 +13,7 @@ function Contact () {
         <div className="contact-info">
           <h2>Get in touch</h2>
           <p>
-            Feel free to reach out to learn more about my work or just to say hi! Feel free to reach out to learn more about my work or just to say hi!
+            If you want to ask questions, learn more about my work, collaborate, share a photo of your dog, or just say hi, please, feel free to reach out!
           </p>
           <a 
             href="mailto:luanateixeira148@gmail.com"
