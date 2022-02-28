@@ -4,7 +4,7 @@ import { projectArray } from "../../data-files/projects-array";
 
 function Projects() {
   return (
-    <div className="projects-page">
+    <div className="projects-page" id="!">
       <main>
         <header>
           <h1>Projects</h1>
