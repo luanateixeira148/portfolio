@@ -1,6 +1,8 @@
 export const projectArray = [
 
   {
+
+    id: "portfolio_project",
     img_url: "/images/portfolio.png",
     title: 'Personal Portfolio *Inception!!*',
     project_url: 'https://luanateixeira148.github.io/portfolio/',
@@ -10,6 +12,7 @@ export const projectArray = [
   },
   {
   
+    id: "acuity_scheduler_project",
     img_url: "/images/acuity_scheduler.png",
     title: 'Acuity Scheduler',
     project_url: 'https://www.fieldtriphealth.com/get-started-now',
@@ -19,7 +22,8 @@ export const projectArray = [
   },
 
   {
-  
+
+    id: "lotify_project",
     img_url: "/images/lotify.png",
     title: 'Lotify',
     project_url: 'https://github.com/luanateixeira148/lotify',
@@ -29,7 +33,8 @@ export const projectArray = [
   },
 
   {
-  
+    
+    id: "shevalesco_project",
     img_url: "/images/shevalesco.png",
     title: "ShEvalesco",
     project_url: 'https://shevalesco.ca/',
