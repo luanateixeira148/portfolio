@@ -4,7 +4,7 @@ function ProjectCard(props) {
   const project = props.project;
 
   return (
-    <div className="project-card">
+    <div className="project-card" id={project.id}>
       <a href={project.project_url} target="_blank" >
         <img src={process.env.PUBLIC_URL + project.img_url} alt="Lotify" className="project-card-img" />
       </a>
