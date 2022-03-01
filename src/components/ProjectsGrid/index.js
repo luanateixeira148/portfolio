@@ -15,7 +15,7 @@ function ProjectsGrid () {
       <main>
         <div className="projects-comp-grid">
           {projectArray.map((project) => (
-            <HashLink to={"/portfolio/projects#" + project.id}>
+            <HashLink to={"/portfolio/projects#" + project.id} className="projects-comp-link" >
               <img 
                 src={process.env.PUBLIC_URL + project.img_url}
                 alt="Lotify" 

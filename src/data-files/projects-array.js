@@ -4,8 +4,8 @@ export const projectArray = [
 
     id: "portfolio_project",
     img_url: "/images/portfolio.png",
-    title: 'Personal Portfolio *Inception!!*',
-    project_url: 'https://luanateixeira148.github.io/portfolio/',
+    title: 'Personal Portfolio',
+    project_url: 'https://github.com/luanateixeira148/portfolio',
     description: "I developed this version of my personal portfolio from scratch. The idea was to practice (and show off) my skills of JavaScript, React and SCSS. A lot of time and love was put into this project, and it will be constantly evolving as my knowledge grows.",
     tech_stack: 'React, React-Router, SASS, GitHub Pages'
   

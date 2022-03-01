@@ -1,15 +1,12 @@
 @import "../../sassStyles/variables";
 
 .navbar {
-  position: absolute;
-  top: 0;
   background-color: $light-coral;
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   padding: 30px;
 }
 
