@@ -1,35 +1,26 @@
 @import "../../sassStyles/variables";
 @import "../../sassStyles/mixins";
 
-.projects-comp-container {
-
-  main {
-    @include flexCenter(column);
-    .projects-comp-grid {
-      display: flex;
-      flex-wrap: wrap;
-
-      &:hover .projects-comp-img:not(:hover) {
-        filter: grayscale(70%);
-      }
-    }
-  }
-}
-
 @media (min-width: $desktop-min-width) {
   .projects-comp-container {
-  
     main {
       @include flexCenter(column);
+
       .projects-comp-grid {
         width: 600px;
+        display: flex;
+        flex-wrap: wrap;
   
         &:hover .projects-comp-img:not(:hover) {
           filter: grayscale(70%);
         }
-    
-        .projects-comp-img {
-          width: 300px;
+
+        .projects-comp-link {
+          height: 300px;
+          
+          .projects-comp-img {
+            width: 300px;
+          }
         }
       }
       .projects-button {
@@ -47,14 +38,23 @@
 
       .projects-comp-grid {
         width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
   
         &:hover .projects-comp-img:not(:hover) {
           filter: grayscale(70%);
 
         }
-        .projects-comp-img {
-          width: 50%;
-  
+
+        .projects-comp-link {
+          @include flexCenter(column);
+          .projects-comp-img {
+            width: 50%;
+            
+          }
         }
       }
     }

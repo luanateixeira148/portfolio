@@ -7,12 +7,15 @@
 }
 
 body {
+  background-color: $light-coral;
   margin: 0;
   padding: 0;
+  @include flexCenter(column)
 }
 
 .app {
   background-color: $light-coral;
+  width: 90vw;
   min-width: 300px;
-  @include flexCenter(column)
+  max-width: 1300px;
 }
