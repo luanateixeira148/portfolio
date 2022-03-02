@@ -1,6 +1,8 @@
 @import "../../sassStyles/variables";
 
 .navbar {
+  position: sticky;
+  top: 0;
   background-color: $light-coral;
 
   display: flex;
@@ -10,63 +12,20 @@
   padding: 30px;
 }
 
-@media (min-width: $desktop-min-width) {
-
-  .navbar {
-    .logo-container {
-      .logo {
-        width: 50px;
-
-        &:hover {
-          transform: rotate(180deg);
-        }
-
-      }
-    }
-    .nav-links {
-      display: flex;
-      flex-direction: row;
-      
-      .nav-link {
-        margin: 0 25px;
-        color: $dark-purple;
-        text-decoration: none;
-
-        &:hover {
-          color: $coral;
-        }
-
-        &:active {
-          color: $coral;
-          text-decoration: none;
-        }
-      }
-    }
-    .burger-menu {
-      display: none;
-    }
+@media (min-width: $desktop-min-width) { 
+  .logo {
+    width: 60px;
+  }
+  .mobile-nav-container {
+    display: none;
   }
 }
 
 @media (max-width: $mobile-max-width) {
-  .navbar {
-    .logo-container {
-      .logo {
-        width: 40px;
-
-      }
-    }
-    .nav-links {
-      display: none;
-
-    }
-    .burger-menu {
-      color: $dark-purple;
-      font-size: 25px;
-
-      &:hover {
-        cursor: pointer;
-      }
-    }
+  .logo {
+    width: 40px;
+  }
+  .desktop-nav-container {
+    display: none;
   }
 }

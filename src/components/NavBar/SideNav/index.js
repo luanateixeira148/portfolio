@@ -12,7 +12,7 @@ function SideNav(props) {
         <FontAwesomeIcon 
           icon={faTimes} 
           className="burger-menu-icon"
-          onClick={() => props.setMenuOpen(false)}  
+          onClick={() => props.setBurgerMenuOpen(false)}  
         />
       </div>
       <div className="side-nav-links">

@@ -1,14 +1,9 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import { HashLink } from 'react-router-hash-link';
 import "./navbar.scss";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import SideNav from "../SideNav";
+import DesktopNavBar from "./Desktop";
+import MobileNavBar from "./Mobile";
+import { Link } from "react-router-dom";
 
 function NavBar() {
-
-  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className="navbar">
@@ -17,41 +12,15 @@ function NavBar() {
           <img 
             src={process.env.PUBLIC_URL + "/logo.svg"}
             className="logo" 
-            onClick={() => setMenuOpen(false)}  
-          />
+            />
         </Link>
       </div>
-      <div className="nav-links">
-        <Link to="/portfolio/projects" className="nav-link">
-          <h6>Projects</h6>
-        </Link>
-        <HashLink to="/portfolio#about" className="nav-link">
-          <h6>About</h6>
-        </HashLink>
-        <HashLink to="/portfolio#contact" className="nav-link">
-          <h6>Contact</h6>
-        </HashLink>
-        <a 
-          href={process.env.PUBLIC_URL + "/resume.pdf"} 
-          target="_blank" 
-          type="application/pdf"
-          className="nav-link"
-        >
-          <h6>Resume</h6>
-        </a>
+      <div className='desktop-nav-container'>
+        <DesktopNavBar />
       </div>
-      <div className="burger-menu" id="burger-menu">
-        <FontAwesomeIcon 
-          icon={faBars} 
-          className="burger-menu-icon"
-          onClick={() => setMenuOpen(true)}  
-        />
-      </div>
-      {menuOpen && (
-        <SideNav 
-          setMenuOpen={setMenuOpen}
-        />
-      )}
+      <div className='mobile-nav-container'>
+        <MobileNavBar />
+      </div> 
     </div>
   );
 }
