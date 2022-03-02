@@ -3,21 +3,39 @@
 .navbar {
   position: sticky;
   top: 0;
+  z-index: 1;
   background-color: $light-coral;
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  padding: 20px;
 }
 
 @media (min-width: $desktop-min-width) { 
-  .logo {
-    width: 60px;
-  }
   .mobile-nav-container {
     display: none;
+  }
+  
+  .large {
+    padding: 40px 20px;
+    border-bottom: 1px transparent solid;
+    transition: 1s ease;
+    .logo {
+      width: 70px;
+      transition: 1s ease;
+    }
+  }
+
+  .shrank {
+    border-bottom: 1px #FEDBDB solid;
+    padding: 10px 20px;
+    transition: 1s ease;
+    .logo {
+      width: 40px;
+      transition: 1s ease;
+    }
   }
 }
 

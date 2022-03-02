@@ -1,33 +1,14 @@
-import { useState, useEffect } from "react";
+
 import { Link } from "react-router-dom";
 import { HashLink, NavHashLink } from 'react-router-hash-link';
 import "./desktop.scss";
 
 function DesktopNavBar() {
-  
-  // let listener = null
-  // const [scrollState, setScrollState] = useState("top")
-
-  // useEffect(() => {
-  //   listener = document.addEventListener("scroll", e => {
-  //     var scrolled = document.scrollingElement.scrollTop
-  //     if (scrolled >= 120) {
-  //       if (scrollState !== "amir") {
-  //         setScrollState("amir")
-  //       }
-  //     } else {
-  //       if (scrollState !== "top") {
-  //         setScrollState("top")
-  //       }
-  //     }
-  //   })
-  //   return () => {
-  //     document.removeEventListener("scroll", listener)
-  //   }
-  // }, [scrollState])
 
   return (
-    <div className="desktop-navbar">
+    <div 
+      className="desktop-navbar"
+    >
       <Link 
         to="/portfolio/projects" 
         className="nav-link"
