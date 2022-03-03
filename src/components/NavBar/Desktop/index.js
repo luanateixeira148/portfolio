@@ -1,29 +1,31 @@
 
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { HashLink, NavHashLink } from 'react-router-hash-link';
 import "./desktop.scss";
 
 function DesktopNavBar() {
 
+  let location = useLocation();
+
   return (
     <div 
       className="desktop-navbar"
     >
-      <Link 
+      <HashLink 
         to="/portfolio/projects" 
-        className="nav-link"
+        className={`${location.pathname}${location.hash}` === "/portfolio/projects" ? "nav-link selected" : "nav-link"}
       >
         <h6>Projects</h6>
-      </Link>
+      </HashLink>
       <HashLink 
         to="/portfolio#about" 
-        className="nav-link" 
+        className={`${location.pathname}${location.hash}` === "/portfolio#about" ? "nav-link selected" : "nav-link"}
       >
         <h6>About</h6>
       </HashLink>
       <HashLink 
         to="/portfolio#contact" 
-        className="nav-link"
+        className={`${location.pathname}${location.hash}` === "/portfolio#contact" ? "nav-link selected" : "nav-link"}
       >
         <h6>Contact</h6>
       </HashLink>
