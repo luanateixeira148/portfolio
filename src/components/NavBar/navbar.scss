@@ -4,13 +4,14 @@
   position: sticky;
   top: 0;
   z-index: 1;
+  width: 100%;
   background-color: $light-coral;
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 20px 50px;
 }
 
 @media (min-width: $desktop-min-width) { 
@@ -19,7 +20,7 @@
   }
   
   .large {
-    padding: 40px 20px;
+    padding: 40px 10%;
     border-bottom: 1px transparent solid;
     transition: 1s ease;
     .logo {
@@ -29,8 +30,9 @@
   }
 
   .shrank {
-    border-bottom: 1px #FEDBDB solid;
-    padding: 10px 20px;
+    border-bottom: 1px #F3EDED solid;
+    box-shadow: 2px 2px 5px rgba(212, 212, 212, 0.4);
+    padding: 10px 10%;
     transition: 1s ease;
     .logo {
       width: 40px;
@@ -40,10 +42,27 @@
 }
 
 @media (max-width: $mobile-max-width) {
-  .logo {
-    width: 40px;
-  }
   .desktop-nav-container {
     display: none;
   }
+  .large {
+    padding: 25px 10%;
+    border-bottom: 1px transparent solid;
+    transition: 1s ease;
+    .logo {
+      width: 50px;
+      transition: 1s ease;
+    }
+  }
+  .shrank {
+    border-bottom: 1px #F3EDED solid;
+    box-shadow: 2px 2px 5px rgba(212, 212, 212, 0.4);
+    padding: 10px 10%;
+    transition: 1s ease;
+    .logo {
+      width: 30px;
+      transition: 1s ease;
+    }
+  }
+  
 }

@@ -24,21 +24,22 @@ function NavBar() {
 
   return (
     <div className={pageScrollTop ? "navbar large" : "navbar shrank"}>
-      <div className="logo-container">
-        <Link to="/portfolio/">
-          <img 
-            src={process.env.PUBLIC_URL + "/logo.svg"}
-            className="logo" 
-            />
-        </Link>
+        <div className="logo-container">
+          <Link to="/portfolio/">
+            <img 
+              src={process.env.PUBLIC_URL + "/logo.svg"}
+              className="logo" 
+              />
+          </Link>
+        </div>
+        <div className='desktop-nav-container'>
+          <DesktopNavBar />
+        </div>
+        <div className='mobile-nav-container'>
+          <MobileNavBar />
+        </div> 
       </div>
-      <div className='desktop-nav-container'>
-        <DesktopNavBar />
-      </div>
-      <div className='mobile-nav-container'>
-        <MobileNavBar />
-      </div> 
-    </div>
+
   );
 }
 
