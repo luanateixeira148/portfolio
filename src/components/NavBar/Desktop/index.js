@@ -1,7 +1,8 @@
-
+import { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { HashLink, NavHashLink } from 'react-router-hash-link';
 import "./desktop.scss";
+import ScrollToTop from '../../../helpers/scrollToTop';
 
 function DesktopNavBar() {
 
@@ -14,6 +15,7 @@ function DesktopNavBar() {
       <HashLink 
         to="/portfolio/projects" 
         className={`${location.pathname}${location.hash}` === "/portfolio/projects" ? "nav-link selected" : "nav-link"}
+        onClick={() => ScrollToTop()}
       >
         <h6>Projects</h6>
       </HashLink>

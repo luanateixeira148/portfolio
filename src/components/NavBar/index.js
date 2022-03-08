@@ -3,6 +3,7 @@ import "./navbar.scss";
 import DesktopNavBar from "./Desktop";
 import MobileNavBar from "./Mobile";
 import { Link } from "react-router-dom";
+import ScrollToTop from '../../helpers/scrollToTop';
 
 function NavBar() {
 
@@ -25,7 +26,11 @@ function NavBar() {
   return (
     <div className={pageScrollTop ? "navbar large" : "navbar shrank"}>
         <div className="logo-container">
-          <Link to="/portfolio/">
+          <Link 
+            smooth
+            to="/portfolio/"
+            onClick={() => ScrollToTop()}
+          >
             <img 
               src={process.env.PUBLIC_URL + "/logo.svg"}
               className="logo" 
