@@ -1,0 +1,26 @@
+@import "../../../sassStyles/variables";
+
+.desktop-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+    
+  .nav-link {
+    margin: 0 25px;
+    color: $dark-purple;
+    text-decoration: none;
+
+    &:hover {
+      color: $coral;
+    }
+
+    &:active {
+      color: $coral;
+      text-decoration: none;
+    }
+  }
+
+  .selected {
+    color: $coral;
+  }
+}

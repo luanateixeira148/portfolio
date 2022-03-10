@@ -4,11 +4,8 @@ import { projectArray } from "../../data-files/projects-array";
 
 function Projects() {
   return (
-    <div className="projects-page" id="!">
+    <div className="projects-page">
       <main>
-        <header>
-          <h1>Projects</h1>
-        </header>
         {projectArray.map((project) => (
           <ProjectCard 
             project={project}

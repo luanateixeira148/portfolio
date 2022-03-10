@@ -12,29 +12,32 @@ function SideNav(props) {
         <FontAwesomeIcon 
           icon={faTimes} 
           className="burger-menu-icon"
-          onClick={() => props.setMenuOpen(false)}  
+          onClick={() => props.setBurgerMenuOpen(false)}  
         />
       </div>
       <div className="side-nav-links">
         <Link 
           to="/portfolio/projects" 
+          smooth
           className="side-nav-link" 
-          onClick={() => props.setMenuOpen(false)}
+          onClick={() => props.setBurgerMenuOpen(false)}
           >
           <h2>Projects</h2>
         </Link>
         <HashLink 
           to="/portfolio#about" 
+          smooth
           className="side-nav-link" 
-          onClick={() => props.setMenuOpen(false)}
+          onClick={() => props.setBurgerMenuOpen(false)}
           >
           <h2>About</h2>
         </HashLink>
         <HashLink 
           to="/portfolio#contact" 
+          smooth
           className="side-nav-link" 
-          onClick={() => props.setMenuOpen(false)}
-          >
+          onClick={() => props.setBurgerMenuOpen(false)}
+        >
           <h2>Contact</h2>
         </HashLink>
         <a 
@@ -42,7 +45,7 @@ function SideNav(props) {
           target="_blank" 
           type="application/pdf"
           className="side-nav-link" 
-          onClick={() => props.setMenuOpen(false)}
+          onClick={() => props.setBurgerMenuOpen(false)}
         >
           <h2>Resume</h2>
         </a>

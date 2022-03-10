@@ -1,0 +1,10 @@
+@import "../../../sassStyles/variables";
+
+.burger-menu {
+  color: $dark-purple;
+  font-size: 25px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

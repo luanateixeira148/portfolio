@@ -1,58 +1,49 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { HashLink } from 'react-router-hash-link';
 import "./navbar.scss";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import SideNav from "../SideNav";
+import DesktopNavBar from "./Desktop";
+import MobileNavBar from "./Mobile";
 
 function NavBar() {
 
-  const [menuOpen, setMenuOpen] = useState(false);
+  // changes navbar styling based on the window scroll position
+  const [pageScrollTop, setPageScrollTop] = useState(true)
+
+  const changeNavHeight = () => {
+    console.log(window.scrollY)
+    if (window.scrollY >= 100) {
+      setPageScrollTop(false)
+    } else {
+      setPageScrollTop(true)
+    }
+  }
+
+  useEffect(() => {
+    changeNavHeight();
+    window.addEventListener("scroll", changeNavHeight);
+  }, [changeNavHeight])
 
   return (
-    <div className="navbar">
-      <div className="logo-container">
-        <Link to="/portfolio/">
-          <img 
-            src={process.env.PUBLIC_URL + "/logo.svg"}
-            className="logo" 
-            onClick={() => setMenuOpen(false)}  
-          />
-        </Link>
+    <div className={pageScrollTop ? "navbar large" : "navbar shrank"}>
+        <div className="logo-container">
+          <Link 
+            smooth
+            to="/portfolio/"
+          >
+            <img 
+              src={process.env.PUBLIC_URL + "/logo.svg"}
+              className="logo" 
+            />
+          </Link>
+        </div>
+        <div className='desktop-nav-container'>
+          <DesktopNavBar />
+        </div>
+        <div className='mobile-nav-container'>
+          <MobileNavBar />
+        </div> 
       </div>
-      <div className="nav-links">
-        <Link to="/portfolio/projects" className="nav-link">
-          <h6>Projects</h6>
-        </Link>
-        <HashLink to="/portfolio#about" className="nav-link">
-          <h6>About</h6>
-        </HashLink>
-        <HashLink to="/portfolio#contact" className="nav-link">
-          <h6>Contact</h6>
-        </HashLink>
-        <a 
-          href={process.env.PUBLIC_URL + "/resume.pdf"} 
-          target="_blank" 
-          type="application/pdf"
-          className="nav-link"
-        >
-          <h6>Resume</h6>
-        </a>
-      </div>
-      <div className="burger-menu" id="burger-menu">
-        <FontAwesomeIcon 
-          icon={faBars} 
-          className="burger-menu-icon"
-          onClick={() => setMenuOpen(true)}  
-        />
-      </div>
-      {menuOpen && (
-        <SideNav 
-          setMenuOpen={setMenuOpen}
-        />
-      )}
-    </div>
+
   );
 }
 
