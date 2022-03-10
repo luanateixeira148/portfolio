@@ -14,11 +14,11 @@ body {
 .app {
   width: 100vw;
   background-color: $light-coral;
-  @include flexCenter(column);
+  // @include flexCenter(column);
 
-  .app-body {
-    width: 100%;
-    min-width: 300px;
-    max-width: 1300px;
-  }
+  // .app-body {
+  //   width: 100%;
+  //   min-width: 300px;
+  //   max-width: 1300px;
+  // }
 }
