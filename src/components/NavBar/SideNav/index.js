@@ -18,6 +18,7 @@ function SideNav(props) {
       <div className="side-nav-links">
         <Link 
           to="/portfolio/projects" 
+          smooth
           className="side-nav-link" 
           onClick={() => props.setBurgerMenuOpen(false)}
           >
@@ -25,6 +26,7 @@ function SideNav(props) {
         </Link>
         <HashLink 
           to="/portfolio#about" 
+          smooth
           className="side-nav-link" 
           onClick={() => props.setBurgerMenuOpen(false)}
           >
@@ -32,6 +34,7 @@ function SideNav(props) {
         </HashLink>
         <HashLink 
           to="/portfolio#contact" 
+          smooth
           className="side-nav-link" 
           onClick={() => props.setBurgerMenuOpen(false)}
         >
