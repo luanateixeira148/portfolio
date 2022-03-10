@@ -14,6 +14,12 @@
   padding: 20px 50px;
 }
 
+.logo {
+  &:hover {
+    transform: rotate(180deg);
+  }
+}
+
 @media (min-width: $desktop-min-width) { 
   .mobile-nav-container {
     display: none;
@@ -25,7 +31,7 @@
     transition: 1s ease;
     .logo {
       width: 70px;
-      transition: 1s ease;
+      transition: width 1s ease, transform 0s;
     }
   }
 
@@ -36,7 +42,7 @@
     transition: 1s ease;
     .logo {
       width: 40px;
-      transition: 1s ease;
+      transition: width 1s ease, transform 0s;
     }
   }
 }
@@ -45,15 +51,17 @@
   .desktop-nav-container {
     display: none;
   }
+
   .large {
     padding: 25px 10%;
     border-bottom: 1px transparent solid;
     transition: 1s ease;
     .logo {
       width: 50px;
-      transition: 1s ease;
+      transition: width 1s ease, transform 0s;
     }
   }
+  
   .shrank {
     border-bottom: 1px #F3EDED solid;
     box-shadow: 2px 2px 5px rgba(212, 212, 212, 0.4);
@@ -61,7 +69,7 @@
     transition: 1s ease;
     .logo {
       width: 30px;
-      transition: 1s ease;
+      transition: width 1s ease, transform 0s;
     }
   }
   

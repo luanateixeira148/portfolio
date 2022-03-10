@@ -1,12 +1,12 @@
 import { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import "./navbar.scss";
 import DesktopNavBar from "./Desktop";
 import MobileNavBar from "./Mobile";
-import { Link } from "react-router-dom";
-import ScrollToTop from '../../helpers/scrollToTop';
 
 function NavBar() {
 
+  // changes navbar styling based on the window scroll position
   const [pageScrollTop, setPageScrollTop] = useState(true)
 
   const changeNavHeight = () => {
@@ -29,12 +29,11 @@ function NavBar() {
           <Link 
             smooth
             to="/portfolio/"
-            onClick={() => ScrollToTop()}
           >
             <img 
               src={process.env.PUBLIC_URL + "/logo.svg"}
               className="logo" 
-              />
+            />
           </Link>
         </div>
         <div className='desktop-nav-container'>
