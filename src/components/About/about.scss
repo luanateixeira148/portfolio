@@ -10,13 +10,10 @@
     display: flex;
 
     .title {
-      color: $yellow;
+      color: $purple;
     }
     p {
       color: $off-white;
-    }
-    .resume-link {
-    
     }
   }
 }
@@ -65,7 +62,7 @@
   .about {
     main {
       min-height: 70vh;
-      flex-direction: row;
+      flex-direction: row-reverse;
       justify-content: space-around;
 
       .bio {
@@ -97,8 +94,6 @@
   .about {
     main {
       max-width: 1450px;
-      flex-direction: row;
-      justify-content: space-around;
 
       .bio {
         .title {

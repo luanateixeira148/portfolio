@@ -1,26 +1,19 @@
 import SkillsSwiper from "../SkillsSwiper";
-import SkillsBlock from "../SkillsBlock";
-import SectionTags from "../SectionTags";
 import "./skills.scss";
 
 function Skills () {
 
   return (
     <div className="skills">
-      <SectionTags 
-        text={"< skills >"}
-      />
       <main>
-        <div className="swiper-container"> 
-          <SkillsSwiper />
-        </div>
-        <div className="skills-block-container"> 
-          <SkillsBlock />
-        </div>
+        <h1 className="title">&lt; skills &gt;</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam congue suscipit urna, sed interdum ex. Donec ex mauris, molestie nec velit et, mollis interdum nisl. Fusce a faucibus est. Sed faucibus eget est nec placerat. Aenean arcu eros, scelerisque vitae aliquam sit amet, scelerisque sit amet lorem. Donec vel hendrerit eros.
+        </p>
       </main>
-      <SectionTags 
-        text={"</ skills >"}
-      />
+      <aside>
+          <SkillsSwiper />
+      </aside>
     </div>
   )
 }
