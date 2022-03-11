@@ -1,12 +1,12 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Autoplay, Pagination } from 'swiper';
 import SkillsCard from '../SkillsCard';
+import { skillsArray } from '../../data-files/skills-array';
 import "swiper/css";
 import "swiper/css/pagination";
 import "./skills-swiper.scss";
-import SwiperCore, { Pagination } from 'swiper';
-import { skillsArray } from '../../data-files/skills-array';
 
-SwiperCore.use([Pagination]);
+SwiperCore.use([Pagination, Autoplay]);
 
 function SkillsSwiper () {
 
@@ -17,6 +17,10 @@ function SkillsSwiper () {
       loop={true}
       pagination={{
         "clickable": true
+      }}
+      autoplay={{
+        delay: 7000,
+        disableOnInteraction: false
       }}
     >
       {skillsArray.map((skill) => (

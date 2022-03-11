@@ -6,17 +6,13 @@ function SkillsCard (props) {
 
   return (
     <div className="skill-card">
-      <header>
-        <h2>{skill.title}</h2>
-      </header>
-      <main className="skills-list">
-        <hr />
-        <ul>
+      <h2 className="h2">{skill.title}</h2>
+      <hr />
+        <ul className="skill-list">
           {skill.skills.map((item) => (
             <li>{item}</li>
             ))}
         </ul>
-      </main>
     </div>
   );
 

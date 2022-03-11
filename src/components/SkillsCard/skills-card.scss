@@ -1,39 +1,80 @@
 @import '../../sassStyles/variables';
 @import '../../sassStyles/mixins';
 
+/* 
+ *  mobile
+ */
 
 .skill-card {
-  @include flexCenter(column);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
   background-color: $light-coral;
-  border: solid 0.5px $purple;
-  margin: 2px;
-  padding: 10%;
-
-  header {
-    @include flexCenter(column);
-    height: 20%;
-    width: 100%;
-
-    h2 {
-      text-align: center;
-      color: $coral;
-    }
+  min-width: 300px;
+  padding: 30px 40px;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.25);
+  height: 450px;
+  
+  .h2 {
+    font-size: 20px;
+    color: $purple;
+  
   }
-
-  .skills-list {
-    height: 80%;
+  hr {
+    width: 20%;
+    border: 2px $purple solid;
+  }
+  .skill-list {
+    list-style: none;
+    margin: 40px 0;
+    padding: 0;
     text-align: center;
 
-    hr {
-      width: 30%;
-      margin-bottom: 20px;
-      border: solid 0.5px $purple;
-    }
+    li {
+      font-family: 'Exo 2', sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 1.5;
+      color: $dark-purple;
 
-    ul {
+      &:hover {
+        color: $purple;
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .skill-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  
+    background-color: $light-coral;
+    min-width: 380px;
+    padding: 30px 40px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.25);
+    height: 450px;
+    
+    .h2 {
+      font-size: 30px;
+      color: $purple;
+    
+    }
+    hr {
+      width: 20%;
+      border: 2px $purple solid;
+    }
+    .skill-list {
       list-style: none;
+      margin: 40px 0;
       padding: 0;
-      
+      text-align: center;
+  
       li {
         font-family: 'Exo 2', sans-serif;
         font-weight: 300;
@@ -41,42 +82,11 @@
         font-size: 16px;
         line-height: 1.5;
         color: $dark-purple;
-
+  
         &:hover {
-          color: $coral;
+          color: $purple;
         }
       }
     }
   }
-}
-
-
-@media (min-width: $desktop-min-width) {
-  .skill-card {
-    @include flexCenter(column);
-    background-color: $light-coral;
-    border: solid 0.5px $purple;
-    margin: 2px;
-    padding: 10%;
-    height: 460px;
-    width: 240px;
-  }  
-}
-
-@media (max-width: $mobile-max-width) {
-  .skill-card {
-    @include flexCenter(column);
-    background-color: $light-coral;
-    border: solid 0.5px $purple;
-    padding: 10px 10% 10% 10%;
-    height: 520px;
-    width: 280px;
-
-    .skills-list {
-      hr {
-        display: none;
-
-      }
-    }
-  }  
 }

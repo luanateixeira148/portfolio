@@ -1,32 +1,83 @@
 @import '../../sassStyles/mixins';
 @import '../../sassStyles/variables';
 
-@media (min-width: $desktop-min-width) {
-  .skills {
-    main {
-      .swiper-container {
-        display: none;
+/* 
+ *  mobile
+ */
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: $purple;
   
+  main {
+    height: 100%;
+    padding: 30px;
+
+    .title {
+      font-size: 65px;
+      padding: 20px 0;
+      color: $yellow;
+    }
+
+    p {
+      color: $off-white;
+    }
+  }
+
+  aside {
+    background-color: $yellow;
+    padding: 30px 0;
+
+  }
+}
+
+ /* 
+ *  desktop
+ */
+
+@media (min-width: 900px) {
+  .skills {
+    flex-direction: row;
+    align-items: center;
+
+    main {
+      width: 50%;
+      padding: 30px;
+
+      .title {
+        font-size: 8vw;
+        padding: 10px;
       }
+    }
+
+    aside {
+      width: 50%;
+      @include flexCenter(row);
+      padding: 100px 0;
     }
   }
 }
 
-@media (max-width: $mobile-max-width) {
+
+/* 
+ *  large desktop
+ */
+
+@media (min-width: 1451px) {
   .skills {
-    width: 100vw;
-    
+
     main {
-      display: flex;
-      justify-content: center;
+      padding-left: 10vw;
 
-      .swiper-container {
-        width: 300px;
+      .title {
+        font-size: 110px;
       }
+    }
 
-      .skills-block-container {
-        display: none;
-      }
+    aside {
+      padding-right: 10vw;
     }
   }
 }
