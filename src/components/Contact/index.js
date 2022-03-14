@@ -1,31 +1,42 @@
 import "./contact.scss";
-import Button from "../PrimaryButton"
-import SectionTags from "../SectionTags";
 
 function Contact () {
 
   return (
     <div className="contact" id="contact">
-      <SectionTags 
-        text={"< contact >"}
-      />
-      <main>
-        <div className="contact-info">
-          <h2>Get in touch</h2>
-          <p>
-            If you want to ask questions, learn more about my work, collaborate, share a photo of your dog, or just say hi, please, feel free to reach out!
-          </p>
-          <a 
-            href="mailto:luanateixeira148@gmail.com"
-            className="contact-button"  
-            >
-            <Button text={"SAY HELLO!"} />
-          </a>
-        </div>
-      </main>
-      <SectionTags 
-        text={"</ contact >"}
-      />
+      <h1 className="title">&lt; contact &gt;</h1>
+      <div className="contact-block">
+        <a
+          href="https://calendly.com/luanateixeira148/30min"
+          target="_blank" 
+        >
+          <p><span>book a time</span> with me</p>
+        </a>
+        <a
+          href="mailto:luanateixeira148@gmail.com"
+          target="_blank"
+        >
+          <p><span>email</span> me</p>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/luanateixeira148/"
+          target="_blank"
+        >
+          <p>connect with me on <span>LinkedIn</span></p>
+        </a>
+        <a
+          href="https://github.com/luanateixeira148/"
+          target="_blank"
+        >
+          <p>see my projects on <span>GitHub</span></p>
+        </a>
+        <a
+          href="https://twitter.com/_Luana148"
+          target="_blank"
+        >
+          <p>follow me on <span>Twitter</span></p>
+        </a>
+      </div>
     </div>
   );
 

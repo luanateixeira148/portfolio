@@ -13,17 +13,6 @@ function Footer () {
             Designed &amp; Developed by Luana Teixeira
           </h5>
         </a>
-        <div className="social-icons">
-          <a href="mailto:luanateixeira148@gmail.com" target="_blank" id="email-icon">
-            <FontAwesomeIcon icon={faEnvelope} className="social-icon" />
-          </a>
-          <a href='https://www.linkedin.com/in/luanateixeira148/' target="_blank">
-            <FontAwesomeIcon icon={faLinkedinIn} className="social-icon" />
-          </a>
-          <a href="https://github.com/luanateixeira148/" target="_blank" >
-            <FontAwesomeIcon icon={faGithub} className="social-icon" />
-          </a>
-        </div>
     </div>
   );
 
