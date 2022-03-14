@@ -6,37 +6,30 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 5%;
 
   .title {
     color: $yellow;
-    padding: 40px;
+  }
+  p {
+    color: $off-white;
+    width: 35%;
+    text-align: center;
+    padding: 3%;
   }
 
-  .contact-block {
-    min-height: 50vh;
-    @include flexCenter(column);
+  .social-icons {
+    margin: 4% 0 0 0;
 
-    a {
-      text-decoration: none;
-      p {
-        font-size: 22px;
-        margin: 5px;
-        color: $off-white;
-        font-weight: 500;
-        text-align: center;
-        
-        span {
-          color: $yellow;
-        }
+    .social-icon {
+      font-size: 30px;
+      margin: 10px;
+      color: $off-white;
 
-        &:hover {
-          color: $dark-purple;
-
-          span {
-            color: $dark-purple;
-          }
-        }
+      &:hover {
+        color: $yellow;
       }
+
     }
   }
 }
@@ -49,7 +42,6 @@
   .contact {
     .title {
       font-size: 65px;
-      padding: 20px 0;
     }
   }
 }
@@ -59,12 +51,8 @@
  */
 
 @media (min-width: 900px) {
-  .contact-block {
-    padding: 5% 10% 10% 10%;
-  }
   .title {
     font-size: 8vw;
-    padding: 10px;
   }
 }
 
@@ -75,6 +63,5 @@
  @media (min-width: 1451px) {
   .title {
     font-size: 110px;
-    padding: 30px;
   }
 }

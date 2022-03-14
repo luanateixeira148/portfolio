@@ -1,40 +1,31 @@
 import "./contact.scss";
+import PrimaryButton from '../PrimaryButton';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faAt } from "@fortawesome/free-solid-svg-icons";
 
 function Contact () {
 
   return (
     <div className="contact" id="contact">
       <h1 className="title">&lt; contact &gt;</h1>
-      <div className="contact-block">
-        <a
-          href="https://calendly.com/luanateixeira148/30min"
-          target="_blank" 
-        >
-          <p><span>book a time</span> with me</p>
+      <p>I am always open to talk about partnership opportunities, software development, mental health, and dogs!</p>
+      <a
+        href="https://calendly.com/luanateixeira148/30min"
+        target="_blank" 
+      >
+        <PrimaryButton text={"LET'S TALK"} />
+      </a>
+      <div className="social-icons">
+        <a href="mailto:luanateixeira148@gmail.com" target="_blank" >
+          <FontAwesomeIcon icon={faAt} className="social-icon" />
         </a>
-        <a
-          href="mailto:luanateixeira148@gmail.com"
-          target="_blank"
-        >
-          <p><span>email</span> me</p>
+        <a href='https://www.linkedin.com/in/luanateixeira148/' target="_blank" >
+          <FontAwesomeIcon icon={faLinkedinIn} className="social-icon" />
         </a>
-        <a
-          href="https://www.linkedin.com/in/luanateixeira148/"
-          target="_blank"
-        >
-          <p>connect with me on <span>LinkedIn</span></p>
-        </a>
-        <a
-          href="https://github.com/luanateixeira148/"
-          target="_blank"
-        >
-          <p>see my projects on <span>GitHub</span></p>
-        </a>
-        <a
-          href="https://twitter.com/_Luana148"
-          target="_blank"
-        >
-          <p>follow me on <span>Twitter</span></p>
+        <a href="https://github.com/luanateixeira148/" target="_blank" >
+          <FontAwesomeIcon icon={faGithub} className="social-icon" />
         </a>
       </div>
     </div>
