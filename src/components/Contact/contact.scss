@@ -2,25 +2,66 @@
 @import "../../sassStyles/mixins";
 
 .contact {
-  main {
-    @include flexCenter(column);
+  background-color: $coral;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
 
-    .contact-info {
-      height: 70vh;
-      width: 70%;
-      max-width: 600px;
-      @include flexCenter(column);
-    
-      h2 {
-        color: $coral;
-        margin: 0.5em 0;
+  .title {
+    color: $yellow;
+  }
+  p {
+    color: $off-white;
+    width: 35%;
+    text-align: center;
+    padding: 3%;
+  }
+
+  .social-icons {
+    margin: 4% 0 0 0;
+
+    .social-icon {
+      font-size: 30px;
+      margin: 10px;
+      color: $off-white;
+
+      &:hover {
+        color: $yellow;
       }
-      
-      p {
-        text-align: center;
-        font-size: 16px;
-        margin: 0.5em 0;
-      }
+
     }
+  }
+}
+
+/* 
+ *  mobile
+ */
+
+@media (max-width: 899px) {
+  .contact {
+    .title {
+      font-size: 65px;
+    }
+  }
+}
+
+/* 
+ *  desktop
+ */
+
+@media (min-width: 900px) {
+  .title {
+    font-size: 8vw;
+  }
+}
+
+/* 
+ *  large desktop
+ */
+
+ @media (min-width: 1451px) {
+  .title {
+    font-size: 110px;
   }
 }

@@ -2,12 +2,12 @@
 @import "../../sassStyles/variables";
 
 .footer {
+  background-color: $light-yellow;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   width: 100%;
-  margin-top: 10%;
-  padding: 20px 30px;
+  padding: 30px 40px;
 
   a {
     text-decoration: none;
@@ -17,33 +17,10 @@
       color: $coral;
     }
   }
-
-  .social-icons {
-    @include flexCenter(row);
-    font-size: 45px; //defines the size of each social icon
-    color: $dark-purple;
-
-    #email-icon {
-      font-size: 40px;
-    }
-
-    .social-icon {
-      padding: 10px;
-      margin: 5px;
-      border-radius: 50%;
-      color: $dark-purple;
-
-      &:hover {
-        color: $off-white;
-        background-color: $dark-purple;
-      }
-    }
-  }
 }
 
 @media (max-width: $mobile-max-width) {
   .footer {
-    display: flex;
     flex-direction: column-reverse;
     align-items: center;
   }

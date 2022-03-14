@@ -4,13 +4,13 @@
 
   height: 40px;
   width: 150px;
-  background-color: $light-coral;
+  background-color: $purple;
 
   font-family: 'Exo 2', sans-serif;
   font-weight: 800; //extra-bold
   font-style: normal;
   font-size: 14px;
-  color: $purple;
+  color: $off-white;
   letter-spacing: 0.12em;
 
   border: 2px solid $purple;
@@ -21,6 +21,6 @@
 
   &:hover {
     background-color: $purple;
-    color: $off-white;
+    border: $off-white 2px solid ;
   }
 }
