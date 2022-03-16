@@ -25,13 +25,6 @@ function ProjectsGrid () {
             text={"SEE MORE"} 
           />
         </HashLink>
-        {/* <div className="projects-button">
-          <HashLink to="/portfolio/projects" className="nav-link">
-          <PrimaryButton 
-          text={"EXPLORE"} 
-          />
-          </HashLink>
-        </div> */}
     </div>
   );
 

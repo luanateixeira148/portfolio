@@ -3,7 +3,8 @@
  
 
 .hero {
-  height: 100vh;
+  background-color: $light-yellow;
+  height: 90vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -12,8 +13,9 @@
   main {
     .intro {
       .upper-title {
-        color: $purple;
+        color: $yellow;
         font-size: 20px;
+        letter-spacing: 0.3em;
 
       }
       .title-name {

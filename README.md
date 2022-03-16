@@ -33,13 +33,3 @@ Feel free to clone or fork this repo, as this site is completely open source.
   ```
   npm start
   ```
-
-## Other info
-
-### Next Steps
-* Include illustration in the hero section
-* Add highlight on scroll to the navbar
-* Add contact form
-* Add loading animation
-* Add transition between pages
-* Add scrolling animations
