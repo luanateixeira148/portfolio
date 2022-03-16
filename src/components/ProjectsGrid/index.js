@@ -8,33 +8,30 @@ import "./projects.scss";
 function ProjectsGrid () {
 
   return (
-    <div className="projects-comp-container">
-      <SectionTags 
-        text={"< projects >"}
-      />
-      <main>
+    <div className="projects-component">
+        <h1 className="title">&lt; projects &gt;</h1>
         <div className="projects-comp-grid">
           {projectArray.map((project) => (
             <HashLink to={"/portfolio/projects#" + project.id} className="projects-comp-link" >
               <img 
                 src={process.env.PUBLIC_URL + project.img_url}
-                alt="Lotify" 
                 className="projects-comp-img"
-              />
+                />
             </HashLink>
           ))}
         </div>
-        <div className="projects-button">
+        <HashLink to="/portfolio/projects" className="button">
+          <PrimaryButton 
+            text={"SEE MORE"} 
+          />
+        </HashLink>
+        {/* <div className="projects-button">
           <HashLink to="/portfolio/projects" className="nav-link">
-            <PrimaryButton 
-              text={"SEE MORE"} 
-            />
+          <PrimaryButton 
+          text={"EXPLORE"} 
+          />
           </HashLink>
-        </div>
-      </main>
-      <SectionTags 
-        text={"</ projects >"}
-      />
+        </div> */}
     </div>
   );
 
