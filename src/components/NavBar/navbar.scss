@@ -1,11 +1,10 @@
 @import "../../sassStyles/variables";
 
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 2;
   width: 100%;
-  background-color: $light-yellow;
 
   display: flex;
   flex-direction: row;
@@ -26,16 +25,18 @@
   }
   
   .large {
-    padding: 40px 10%;
+    background-color: $light-yellow;
+    padding: 30px 10%;
     border-bottom: 1px transparent solid;
     transition: 1s ease;
     .logo {
-      width: 70px;
+      width: 50px;
       transition: width 1s ease, transform 0s;
     }
   }
 
   .shrank {
+    background-color: $light-yellow;
     border-bottom: 1px #F3EDED solid;
     box-shadow: 2px 2px 5px rgba(212, 212, 212, 0.4);
     padding: 10px 10%;
@@ -53,6 +54,7 @@
   }
 
   .large {
+    background-color: transparent;
     padding: 25px 10%;
     border-bottom: 1px transparent solid;
     transition: 1s ease;
@@ -63,6 +65,7 @@
   }
   
   .shrank {
+    background-color: $light-yellow;
     border-bottom: 1px #F3EDED solid;
     box-shadow: 2px 2px 5px rgba(212, 212, 212, 0.4);
     padding: 10px 10%;
