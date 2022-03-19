@@ -1,32 +1,20 @@
 @import "../../sassStyles/variables";
 @import "../../sassStyles/mixins";
 
-.about {
-  width: 100%;
-  @include flexCenter(column);
-  background-color: $coral;
-
-  main {
-    display: flex;
-
-    .title {
-      color: $yellow;
-    }
-    p {
-      color: $off-white;
-      margin: 10px 0;
-    }
-  }
-}
 
 /* 
  *  mobile
  */
 
-@media (max-width: 899px) {
+.about-container {
+
   .about {
+    width: 100%;
+    @include flexCenter(column);
+    background: linear-gradient(89.75deg, #FF7842 0.24%, #FF5957 99.81%);
+    
     main {
-      min-height: 70vh;
+      display: flex;
       flex-direction: column;
       align-items: center;
 
@@ -36,50 +24,62 @@
         justify-content: center;
         align-items: center;
         padding: 30px;
-
+      
         .title {
+          color: $yellow;
           font-size: 65px;
           padding: 20px 0;
+
         }
+        p {
+          color: $off-white;
+          margin: 10px 0;
 
-        
+        }
       }
-
-      .profile-photo {
-        width: 80%;
-        
-      }
+    }
+    .profile-photo {
+      width: 80%;
+    
     }
   }
 }
+
 
 /* 
  *  desktop
  */
 
-@media (min-width: 900px) {
-  .about {
-    main {
-      min-height: 70vh;
-      flex-direction: row-reverse;
-      justify-content: space-around;
+@media (min-width: 1031px) {
+  .about-container {
+    background-color: $light-yellow;
+    padding: 40px;
 
-      .bio {
-        width: 40%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
+    .about {
+      main {
+        min-height: 70vh;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        
+        .bio {
+          width: 40%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          
+          .title {
+            font-size: 7vw;
+            padding: 10px;
 
-        .title {
-          font-size: 8vw;
-          padding: 10px;
+          }
         }
-      }
+        
+        .profile-photo {
+          width: 40%;
+          align-self: flex-end;
 
-      .profile-photo {
-        width: 40%;
-        align-self: flex-end;
+        }
       }
     }
   }
@@ -90,14 +90,16 @@
  */
 
 @media (min-width: 1451px) {
-  .about {
-    main {
-      max-width: 1450px;
-
-      .bio {
-        .title {
-          font-size: 110px;
-          padding: 30px;
+  .about-container {
+    .about {
+      main {
+        max-width: 1450px;
+        
+        .bio {
+          .title {
+            font-size: 110px;
+            padding: 30px;
+          }
         }
       }
     }

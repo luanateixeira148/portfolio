@@ -9,8 +9,8 @@ function Main() {
   return (
     <div className="main" id='main'>
       <Hero />
-      <About />
       <ProjectsComp />
+      <About />
       <Skills />
       <Contact />
     </div>
