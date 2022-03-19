@@ -1,21 +1,22 @@
 import "./hero.scss";
+import PrimaryButton from '../PrimaryButton';
 
 function Hero () {
 
   return (
-    <div className="hero">
-      <main>
-        <div className="intro">
-          <h1 className="upper-title">HELLO, WORLD!</h1>
-          <h1 className="title-name">I'm Luana</h1>
-          <p className="subtitle">
-            I'm a <span>full-stack developer</span> based in Vancouver.
-          </p>
-        </div>
-      </main>
-      <sidebar className="illustration">
-        {/* tbd */}
-      </sidebar> 
+    <div className="hero-container">
+      <div className="hero">
+        <main>
+          <h3>HELLO, WORLD</h3>
+          <h1>I'm Luana</h1>
+          <p>A full-stack developer based in Vancouver</p>
+          <PrimaryButton text={"HIRE ME"} />
+        </main>
+        <aside>
+          <img src={process.env.PUBLIC_URL + "/images/lines-1.png"} />
+        </aside>
+      </div>
+      
     </div>
   );
 

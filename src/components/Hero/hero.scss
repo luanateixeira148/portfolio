@@ -1,82 +1,91 @@
 @import "../../sassStyles/variables";
 @import "../../sassStyles/mixins";
- 
 
-.hero {
+/* 
+ *  mobile
+ */
+
+.hero-container {
+  height: 100vh;
   background-color: $light-yellow;
-  height: 90vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  
-  main {
-    .intro {
-      .upper-title {
-        color: $yellow;
-        font-size: 20px;
-        letter-spacing: 0.3em;
 
+  .hero {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: linear-gradient(256.7deg, #FFD601 5.21%, #FF9033 87.65%);
+
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 70%;
+      padding: 40% 10% 0 10%;
+
+      h3 {
+        color: $purple;
+        margin-left: 7px;
       }
-      .title-name {
-        color: $dark-purple;
 
+      h1 {
+        font-size: 65px;
+        padding: 3px 0;
+        color: $light-yellow;
       }
-      .subtitle {
-        color: $dark-purple;
-        font-size: 20px;
 
-        span {
-          color: $coral;
-          font-weight: 400;
-          padding: 0 2px;
+      p {
+        color: $light-yellow;
+        margin-left: 7px;
+      }
 
-          &:hover {
-            background-color: $purple;
-            color: $off-white;
-            border-radius: 3px;
-          }
-        }
+    }
+
+    aside {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      height: 30%;
+
+      img {
+        width: 50%;
+        margin: 0 10% 10% 0;
+        
       }
     }
   }
 }
 
-@media (min-width: $desktop-min-width) { 
-  .hero {
-    padding: 0 15%;
-    align-items: flex-start;
+/* 
+ *  desktop
+ */
 
-    main {
-      .intro {
-        .upper-title {
-          margin: 0 0 0 0.3em;
+@media (min-width: 900px) {
+  .hero-container {
+    padding: 40px;
+    
+    .hero {
+      flex-direction: row;
 
+      main {
+        height: 100%;
+        width: 60%;
+        padding: 10% 0 0 10%;
+
+        h1 {
+          font-size: 7vw;
         }
-        .title-name {
-          font-size: 100px;
-          margin: 0 0 0.1em 0;
-        }
-        .subtitle {
-          margin: 0 0 0 0.4em;
-        }
+
       }
-    }
-  }
-    
-}
+      aside {
+        height: 100%;
+        width: 40%;
+        align-items: center;
+        justify-content: flex-end;
 
-@media (max-width: $mobile-max-width) {
-  .hero {
-    padding: 0 10%;
-    align-items: center;
-    
-    main {
-      .intro {
-        .title-name {
-          font-size: 50px;
-          margin: 0.1em 0 0.2em 0;
-
+        img {
+          width: 50%;
+          
         }
       }
     }
