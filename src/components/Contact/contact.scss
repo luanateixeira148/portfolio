@@ -1,47 +1,43 @@
 @import "../../sassStyles/variables";
 @import "../../sassStyles/mixins";
 
-.contact {
-  background-color: $coral;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 5%;
-
-  .title {
-    color: $yellow;
-  }
-  p {
-    color: $off-white;
-    width: 35%;
-    text-align: center;
-    padding: 3%;
-  }
-
-  .social-icons {
-    margin: 4% 0 0 0;
-
-    .social-icon {
-      font-size: 30px;
-      margin: 10px;
-      color: $off-white;
-
-      &:hover {
-        color: $yellow;
-      }
-
-    }
-  }
-}
 
 /* 
  *  mobile
  */
 
-@media (max-width: 899px) {
+ .contact-container {
   .contact {
+    background: linear-gradient(270.1deg, #FF5957 0.81%, #FF803C 99.92%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    
     .title {
-      font-size: 65px;
+    color: $yellow;
+    font-size: 65px;
+    padding: 20px 0 0 0;
+    
+    }
+    p {
+      color: $off-white;
+      text-align: center;
+      padding: 60px 30px;
+    }
+  
+    .social-icons {
+      margin: 50px 0 30px 0;
+      
+      .social-icon {
+        font-size: 30px;
+        margin: 10px;
+        color: $off-white;
+        
+        &:hover {
+          color: $yellow;
+        } 
+      }
     }
   }
 }
@@ -51,8 +47,14 @@
  */
 
 @media (min-width: 900px) {
+  .contact-container {
+    // height: 100vh;
+    background-color: $light-yellow;
+    padding: 40px;
+  }
+
   .title {
-    font-size: 8vw;
+    font-size: 7vw;
   }
 }
 

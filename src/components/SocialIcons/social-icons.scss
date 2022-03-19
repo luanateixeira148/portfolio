@@ -9,5 +9,9 @@
     color: $purple;
     font-size: 20px;
     margin: 10px;
+
+    &:hover {
+      color: $coral;
+    }
   }
 }
