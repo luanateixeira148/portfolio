@@ -1,5 +1,6 @@
 import "./hero.scss";
 import PrimaryButton from '../PrimaryButton';
+import SocialIcons from "../SocialIcons";
 
 function Hero () {
 
@@ -7,13 +8,18 @@ function Hero () {
     <div className="hero-container">
       <div className="hero">
         <main>
-          <h3>HELLO, WORLD</h3>
+          <h3>HELLO, WORLD!</h3>
           <h1>I'm Luana</h1>
           <p>A full-stack developer based in Vancouver</p>
           <PrimaryButton text={"HIRE ME"} />
         </main>
         <aside>
-          <img src={process.env.PUBLIC_URL + "/images/lines-1.png"} />
+          <div className="img-container">  
+            <img src={process.env.PUBLIC_URL + "/images/lines-1.png"} />
+          </div>
+          <div className="social-icons-container">
+            <SocialIcons />
+          </div>
         </aside>
       </div>
       
