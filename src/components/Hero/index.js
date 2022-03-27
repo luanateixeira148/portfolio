@@ -11,7 +11,12 @@ function Hero () {
           <h3>HELLO, WORLD!</h3>
           <h1>I'm Luana</h1>
           <p>A full-stack developer based in Vancouver</p>
-          <PrimaryButton text={"HIRE ME"} />
+          <a
+            href="https://calendly.com/luanateixeira148/30min"
+            target="_blank" 
+          >
+            <PrimaryButton text={"LET'S TALK"} />
+          </a>
         </main>
         <aside>
           <div className="img-container">  
