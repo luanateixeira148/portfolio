@@ -1,34 +1,104 @@
 @import "../../sassStyles/mixins";
 @import "../../sassStyles/variables";
 
+/* 
+ *  mobile
+ */
+
 .project-card {
-  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
 
-  .project-card-img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 25px;
-  }
-
-  a {
-    width: 100%;
-    text-decoration: none;
-    color: $dark-purple;
-
-    &:hover {
-      color: $coral;
-    }
-
-    h2 {
-      margin-bottom: 15px;
+  aside {
+    .project-card-img {
+      width: 100%;
     }
   }
 
-  p {
-    margin-bottom: 10px;
+  main {
+    margin: 0;
+    padding: 30px 7% 40px 7%;
 
-    span {
-      font-weight: 500;
+    a {
+      margin: 0 0 15px 0;
+      text-align: left;
+      width: 100%;
+      text-decoration: none;
+
+      &:hover {
+        color: $purple;
+      }
+      &:visited {
+        color: $dark-purple;
+      }
+      
+    }
+    .social-icons-container {
+      width: 100%;
+      margin: 20px 0 0 0;
+      a {
+        color: $dark-purple;
+        font-size: 25px;
+        margin: 10px;
+        &:visited  {
+          color: $dark-purple;
+        }
+        &:hover {
+          color: $purple;
+        }
+      }
+    }
+    p {
+      margin: 10px 0;
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .project-card {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    aside {
+      width:50%;
+      .project-card-img {
+        width: 100%;
+      }
+    }
+  
+    main {
+      @include flexCenter(column);
+      width: 50%;
+      margin: 30px 0 0 0;
+      padding: 0;
+  
+      .social-icons-container {
+
+        a {
+          color: $dark-purple;
+          font-size: 25px;
+          margin: 10px;
+          &:visited  {
+            color: $dark-purple;
+          }
+          &:hover {
+            color: $purple;
+          }
+        }
+      }
+      p {
+        margin: 10px 0;
+        width: 100%;
+        span {
+          font-weight: bold;
+        }
+      }
     }
   }
 }
