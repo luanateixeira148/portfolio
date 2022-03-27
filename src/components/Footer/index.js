@@ -1,9 +1,9 @@
 import "./footer.scss";
 
-function Footer () {
+function Footer(props) {
 
   return (
-    <div className="footer">
+    <div className={`footer ${props.color}`}>
         <a href="https://github.com/luanateixeira148/portfolio" target="_blank" >
           <h5>
             Designed &amp; Developed by Luana Teixeira

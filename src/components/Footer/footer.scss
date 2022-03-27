@@ -1,8 +1,15 @@
 @import "../../sassStyles/mixins";
 @import "../../sassStyles/variables";
 
-.footer {
+
+.footer.yellow {
   background-color: $light-yellow;
+}
+.footer.transparent {
+  background-color: transparent;
+}
+
+.footer {
   display: flex;
   align-items: center;
   justify-content: flex-end;

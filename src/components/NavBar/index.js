@@ -4,13 +4,12 @@ import "./navbar.scss";
 import DesktopNavBar from "./Desktop";
 import MobileNavBar from "./Mobile";
 
-function NavBar() {
+function NavBar(props) {
 
   // changes navbar styling based on the window scroll position
   const [pageScrollTop, setPageScrollTop] = useState(true)
 
   const changeNavHeight = () => {
-    console.log(window.scrollY)
     if (window.scrollY >= 100) {
       setPageScrollTop(false)
     } else {
@@ -24,7 +23,7 @@ function NavBar() {
   }, [changeNavHeight])
 
   return (
-    <div className={pageScrollTop ? "navbar large" : "navbar shrank"}>
+    <div className={pageScrollTop ? `navbar large ${props.color}` : `navbar shrank ${props.color}`} >
         <div className="logo-container">
           <Link 
             smooth
