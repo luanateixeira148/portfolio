@@ -29,7 +29,7 @@ function ProjectCard(props) {
       // style={{backgroundColor: project.backgroundColor}}
     >
       <aside>
-        <a href={project.project_url}>
+        <a href={project.project_url} target="_blank" >
           <img src={process.env.PUBLIC_URL + project.img_url} alt="Lotify" className="project-card-img" />
         </a>
       </aside>
