@@ -34,7 +34,7 @@ function ProjectCard(props) {
         </a>
       </aside>
       <main>
-        <a href={project.project_url}>
+        <a href={project.project_url} target="_blank">
           <h2>{project.title}</h2>
         </a>
         <p>{project.description}</p>
